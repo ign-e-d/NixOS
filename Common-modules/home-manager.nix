@@ -26,6 +26,7 @@
       neofetch
       obs-studio
       obsidian
+      octave
       qalculate-gtk
       qbittorrent
       runelite
