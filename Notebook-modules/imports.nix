@@ -14,6 +14,7 @@
       /home/a/Documents/Share/NixOS-modules/Common-modules/nixpkgs.nix
       /home/a/Documents/Share/NixOS-modules/Common-modules/sound.nix
       /home/a/Documents/Share/NixOS-modules/Common-modules/system.nix
+      /home/a/Documents/Share/NixOS-modules/Common-modules/systemd.nix
       /home/a/Documents/Share/NixOS-modules/Common-modules/time.nix
       /home/a/Documents/Share/NixOS-modules/Common-modules/users.nix
     ];

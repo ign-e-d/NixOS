@@ -17,6 +17,7 @@
       firefox
       gimp
       gsmartcontrol
+      gnome.zenity
       htop
       kate
       kiwix
@@ -36,6 +37,7 @@
       wmctrl
       xclip
       xdotool
+      xorg.xhost
 
       libreoffice-qt
       hunspell
