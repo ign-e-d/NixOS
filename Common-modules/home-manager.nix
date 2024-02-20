@@ -26,9 +26,11 @@
       obs-studio
       obsidian
       octaveFull
+      polkit
       qalculate-gtk
       qbittorrent
       runelite
+      systemd
       tor-browser-bundle-bin
       unison
       vlc
