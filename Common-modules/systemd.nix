@@ -2,11 +2,12 @@
 {
   systemd.user.services.NixOS-check-updates = {
     enable = true;
-    path = [pkgs.bash pkgs.git pkgs.libnotify pkgs.gnome.zenity pkgs.xorg.xhost];
+    path = [pkgs.bash pkgs.git pkgs.libnotify pkgs.gnome.zenity pkgs.xorg.xhost pkgs.coreutils];
     wantedBy = [ "graphical-session.target" ];
     serviceConfig = {
       Type = "oneshot";
       RemainAfterExit = "yes";
+      ExecStartPre = "${pkgs.coreutils}/bin/sleep 10";
       ExecStart = "${pkgs.bash}/bin/bash /home/a/Documents/Share/NixOS-modules/check-updates.sh";
     };
     environment = {

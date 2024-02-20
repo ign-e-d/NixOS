@@ -1,8 +1,4 @@
 xhost +
-sleep 10s
-
-#zenity --notification --text='123'
-#echo "1"
 
 cd /home/a/Documents/Share/NixOS-modules/
 
@@ -16,4 +12,6 @@ if [[ `git diff main origin/main` ]]; then
 else
   zenity --notification --text="Configuration is up to date"
 fi
+
+echo "1"
 
