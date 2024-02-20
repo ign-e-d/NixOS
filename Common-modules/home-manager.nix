@@ -11,7 +11,6 @@
     home.packages = with pkgs; [
       anki-bin
       audacious
-      blender
       clinfo
       drawio
       ffmpeg_5-full
