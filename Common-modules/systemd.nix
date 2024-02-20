@@ -2,7 +2,7 @@
 {
   systemd.user.services.NixOS-check-updates = {
     enable = true;
-    path = [pkgs.bash pkgs.git pkgs.libnotify pkgs.gnome.zenity pkgs.xorg.xhost pkgs.coreutils];
+    path = [pkgs.bash pkgs.git pkgs.coreutils pkgs.libsForQt5.kdialog];
     wantedBy = [ "graphical-session.target" ];
     serviceConfig = {
       Type = "oneshot";

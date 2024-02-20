@@ -17,11 +17,9 @@
       firefox
       gimp
       gsmartcontrol
-      gnome.zenity
       htop
       kate
       kiwix
-      libnotify
       linuxKernel.packages.linux_5_4.wireguard
       lm_sensors
       neofetch
@@ -38,7 +36,6 @@
       wmctrl
       xclip
       xdotool
-      xorg.xhost
 
       libreoffice-qt
       hunspell
@@ -54,6 +51,7 @@
       libsForQt5.ark
       libsForQt5.kruler
       libsForQt5.kdeconnect-kde
+      libsForQt5.kdialog
       krita
     ];
 
