@@ -4,7 +4,7 @@
 sudo nixos-rebuild switch
 
 if [ $? -eq 0 ]; then
-  kdialog --passivepopup "Configuration applied" 20
+  kdialog --passivepopup "Configuration applied"
   ./systemctl-reload.sh
   exit 0
 else
