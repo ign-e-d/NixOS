@@ -7,7 +7,7 @@
     serviceConfig = {
       Type = "oneshot";
       RemainAfterExit = "yes";
-      ExecStartPre = "${pkgs.coreutils}/bin/sleep 10";
+      ExecStartPre = "${pkgs.coreutils}/bin/sleep 20";
       ExecStart = "${pkgs.bash}/bin/bash /home/a/Documents/Share/NixOS-modules/check-updates.sh";
     };
     environment = {
