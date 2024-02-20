@@ -1,6 +1,3 @@
-#! /usr/bin/env nix-shell
-#! nix-shell -i bash -p bash
-
 cd /home/a/Documents/Share/NixOS-modules/
 
 git fetch
