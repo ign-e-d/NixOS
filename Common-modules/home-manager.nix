@@ -51,6 +51,7 @@
       libsForQt5.ark
       libsForQt5.kruler
       libsForQt5.kdeconnect-kde
+      libsForQt5.kdenlive
       libsForQt5.kdialog
       krita
     ];
