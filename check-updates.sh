@@ -26,5 +26,5 @@ else
   else
     exit 0
   fi
-  ./home/a/Documents/Share/NixOS-modules/check-updates.sh
+  ./check-updates.sh
 fi
