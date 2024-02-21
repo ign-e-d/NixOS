@@ -12,7 +12,7 @@ Configuration nix-files are divided into 3 folders:
 
 ## Helpful bash-scripts
 
-1. **check-updates.sh** - runs automatically by user systemd service "NixOS-check-updates" after user login. Compares local and remote git repositories for differences. In case of differences suggests download new configuration from remote repository;
+1. **check-updates.sh** - runs automatically by user systemd service "NixOS-check-updates" after user login. Compares local and remote git repositories for differences. In case of differences suggests to download new configuration from remote repository;
 2. **rebuild.sh** - executes commands "sudo nixos-rebuild switch", "systemctl --user reenable NixOS-check-updates.service" and "systemctl --user restart NixOS-check-updates.service";
 3. **rebuild-wrap.sh** - wrap around rebuild.sh to execute script in separate konsole to monitor the rebuilding process.
 
