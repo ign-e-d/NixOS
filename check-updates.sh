@@ -1,30 +1,30 @@
 cd /home/a/Documents/Share/NixOS-modules/
 
 git fetch
-if [ $? -eq 1 ]; then #TODO: Rewrite
-  kdialog --error "git fetch failed"
+if [ $? -eq 128 ]; then
+  kdialog --title "check-updates.sh" --error "git fetch\nFail"
   exit 1
 fi
 
 DIFF=$(git diff main origin/main)
-if [ $? -eq 1 ]; then #TODO: Rewrite
-  kdialog --error "git diff failed"
+if [ $? -eq 1 ]; then
+  kdialog --title "check-updates.sh" --error "git diff main origin/main\nFail"
   exit 1
 fi
 
 if [[ -z "$DIFF" ]]; then
-  kdialog --passivepopup "Configuration is up to date"
+  kdialog --title "check-updates.sh" --msgbox "Configuration is up to date"
   exit 0
 else
-  kdialog --passivepopup "Configuration is outdated"
-  git pull origin main
-  if [ $? -eq 1 ]; then #TODO: Rewrite
-    kdialog --error "git pull failed"
-    exit 1
-  fi
-  kdialog --yesno "Configuration updated.\nApply new configuration?"
+  kdialog --title "check-updates.sh" --warningyesno "Configuration is outdated.\nDo you want to download new configuration?"
   if [ $? -eq 0 ]; then
-    ./apply-configuration.sh
+      git pull origin main
+      if [ $? -eq 1 ]; then
+        kdialog --title "check-updates.sh" --error "git pull origin main\nFail"
+        exit 1
+      fi
+  else
+    exit 0
   fi
-  ./check-updates.sh
+  ./home/a/Documents/Share/NixOS-modules/check-updates.sh
 fi

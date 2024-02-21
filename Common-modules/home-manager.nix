@@ -18,10 +18,10 @@
       gimp
       gsmartcontrol
       htop
-      kate
       kiwix
       linuxKernel.packages.linux_5_4.wireguard
       lm_sensors
+      mpv
       neofetch
       obs-studio
       obsidian
@@ -55,6 +55,7 @@
       libsForQt5.kdeconnect-kde
       libsForQt5.kdenlive
       libsForQt5.kdialog
+      kate
       krita
     ];
 
