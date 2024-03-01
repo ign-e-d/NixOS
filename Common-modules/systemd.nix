@@ -16,7 +16,7 @@
       Type = "oneshot";
       RemainAfterExit = "yes";
       ExecStartPre = "${pkgs.coreutils}/bin/sleep 10";
-      ExecStart = "${pkgs.bash}/bin/bash /home/a/Documents/Share/NixOS-modules/check-updates.sh";
+      ExecStart = "${pkgs.bash}/bin/bash /home/a/NixOS/check-updates.sh &";
     };
     environment = {
       DISPLAY = ":0";

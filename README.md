@@ -24,7 +24,7 @@ Configuration nix-files are divided into 3 folders:
   imports =
     [
       ./hardware-configuration.nix
-      /home/a/Documents/Share/NixOS-modules/Desktop-modules/imports.nix
+      /home/a/NixOS/Desktop-modules/imports.nix
     ];
 }
 ```

@@ -1,7 +1,10 @@
 { config, pkgs, ... }:
 {
-  nixpkgs.config.allowUnfree = true;
-  nixpkgs.config.permittedInsecurePackages = [
-    "electron-25.9.0"
-  ];
+  nixpkgs.config = {
+    allowUnfree = true;
+    allowUnfreePredicate = _: true;
+    permittedInsecurePackages = [
+      "electron-25.9.0"
+    ];
+  };
 }

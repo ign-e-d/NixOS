@@ -1,4 +1,4 @@
-cd /home/a/Documents/Share/NixOS-modules/
+cd /home/a/NixOS/
 
 git fetch
 if [ $? -eq 128 ]; then

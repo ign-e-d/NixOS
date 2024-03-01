@@ -2,20 +2,20 @@
 {
   imports =
     [
-      /home/a/Documents/Share/NixOS-modules/Desktop-modules/boot.nix
-      /home/a/Documents/Share/NixOS-modules/Desktop-modules/services.nix
+      (./. + "/boot.nix")
+      (./. + "/services.nix")
 
-      /home/a/Documents/Share/NixOS-modules/Common-modules/environment.nix
-      /home/a/Documents/Share/NixOS-modules/Common-modules/hardware.nix
-      /home/a/Documents/Share/NixOS-modules/Common-modules/home-manager.nix
-      /home/a/Documents/Share/NixOS-modules/Common-modules/i18n.nix
-      /home/a/Documents/Share/NixOS-modules/Common-modules/networking.nix
-      /home/a/Documents/Share/NixOS-modules/Common-modules/nix.nix
-      /home/a/Documents/Share/NixOS-modules/Common-modules/nixpkgs.nix
-      /home/a/Documents/Share/NixOS-modules/Common-modules/sound.nix
-      /home/a/Documents/Share/NixOS-modules/Common-modules/system.nix
-      /home/a/Documents/Share/NixOS-modules/Common-modules/systemd.nix
-      /home/a/Documents/Share/NixOS-modules/Common-modules/time.nix
-      /home/a/Documents/Share/NixOS-modules/Common-modules/users.nix
+      (../Common-modules + "/environment.nix")
+      (../Common-modules + "/hardware.nix")
+      (../Common-modules + "/home-manager.nix")
+      (../Common-modules + "/i18n.nix")
+      (../Common-modules + "/networking.nix")
+      (../Common-modules + "/nix.nix")
+      (../Common-modules + "/nixpkgs.nix")
+      (../Common-modules + "/sound.nix")
+      (../Common-modules + "/system.nix")
+      (../Common-modules + "/systemd.nix")
+      (../Common-modules + "/time.nix")
+      (../Common-modules + "/users.nix")
     ];
 }

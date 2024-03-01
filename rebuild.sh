@@ -7,7 +7,7 @@ if [ $? -eq 0 ]; then
 else
   kdialog --title "rebuild.sh" --yesno "nixos-rebuild switch\nFail\nTry again?"
   if [ $? -eq 0 ]; then
-    bash /home/a/Documents/Share/NixOS-modules/rebuild-wrap.sh
+    bash /home/a/NixOS/rebuild-wrap.sh
   fi
   exit 0
 fi
