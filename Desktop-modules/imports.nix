@@ -1,4 +1,5 @@
 { config, pkgs, ... }:
+# add array of modules to import
 {
   imports =
     [
