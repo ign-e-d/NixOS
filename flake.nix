@@ -23,14 +23,14 @@
         ];
       };
     };
-    homeConfigurations = {
-      "a@nixos" = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.x86_64-linux;
-        extraSpecialArgs = {inherit inputs outputs;};
-        modules = [
-          ./home-manager/home.nix
-        ];
-      };
-    };
+    #homeConfigurations = {
+    #  "a@nixos" = home-manager.lib.homeManagerConfiguration {
+    #    pkgs = nixpkgs.legacyPackages.x86_64-linux;
+    #    extraSpecialArgs = {inherit inputs outputs;};
+    #    modules = [
+    #      ./home-manager/home.nix
+    #    ];
+    #  };
+    #};
   };
 }

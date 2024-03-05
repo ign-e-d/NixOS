@@ -2,11 +2,18 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, outputs, ... }:
 {
   imports =
     [
       ./hardware-configuration.nix
-#      /home/a/NixOS-test/Desktop-modules/imports.nix
+      inputs.home-manager.nixosModules.home-manager
     ];
+
+  home-manager = {
+    extraSpecialArgs = { inherit inputs outputs; };
+    users = {
+      a = import ./home-manager/home.nix;
+    };
+  };
 }

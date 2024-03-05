@@ -1,7 +1,7 @@
 { config, pkgs, inputs, ... }:
 {
   home.username = "a";
-  #home.homeDirectory = "/home/a/";
+  home.homeDirectory = "/home/a";
 
   nixpkgs.config = {
     allowUnfree = true;
@@ -63,8 +63,6 @@
     libsForQt5.kdeconnect-kde
     libsForQt5.kdenlive
     libsForQt5.kdialog
-
-    libsForQt5.kcalc
     kate
     krita
   ];
