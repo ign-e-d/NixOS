@@ -12,7 +12,7 @@
 
   outputs = { self, nixpkgs, home-manager, ... } @ inputs: let inherit (self) outputs; in {
     nixosConfigurations = {
-      nixos = nixpkgs.lib.nixosSystem {
+      B550 = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         specialArgs = { inherit inputs outputs; };
         modules = [

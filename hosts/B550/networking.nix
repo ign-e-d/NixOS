@@ -1,6 +1,6 @@
 { config, pkgs, ... }:
 {
-  networking.hostName = "nixos";
+  networking.hostName = "B550";
 
   networking.networkmanager.enable = true;
 
