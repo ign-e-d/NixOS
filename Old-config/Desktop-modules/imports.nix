@@ -5,12 +5,12 @@
     [
       (./. + "/boot.nix")
       (./. + "/services.nix")
+      (./. + "/networking.nix")
 
       (../Common-modules + "/environment.nix")
       (../Common-modules + "/hardware.nix")
       (../Common-modules + "/home-manager.nix")
       (../Common-modules + "/i18n.nix")
-      (../Common-modules + "/networking.nix")
       (../Common-modules + "/nix.nix")
       (../Common-modules + "/nixpkgs.nix")
       (../Common-modules + "/sound.nix")
