@@ -16,8 +16,7 @@
         system = "x86_64-linux";
         specialArgs = { inherit inputs outputs; };
         modules = [
-          #./configuration/configuration.nix
-          ./configuration
+          ./configuration/configuration.nix
           ./hosts/B550
           ./hosts/common
         ];
