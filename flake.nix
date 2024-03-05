@@ -16,21 +16,12 @@
         system = "x86_64-linux";
         specialArgs = { inherit inputs outputs; };
         modules = [
-          ./configuration.nix
+          ./configuration/configuration.nix
 
           ./hosts/B550
           ./hosts/common
         ];
       };
     };
-    #homeConfigurations = {
-    #  "a@nixos" = home-manager.lib.homeManagerConfiguration {
-    #    pkgs = nixpkgs.legacyPackages.x86_64-linux;
-    #    extraSpecialArgs = {inherit inputs outputs;};
-    #    modules = [
-    #      ./home-manager/home.nix
-    #    ];
-    #  };
-    #};
   };
 }
