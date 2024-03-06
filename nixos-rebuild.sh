@@ -35,6 +35,7 @@ git diff -U0 main origin/main
 
 GEN=`readlink /nix/var/nix/profiles/system | cut -d- -f2`
 git commit -am "$GEN"
+git push -u origin
 
 kdialog --title "TEMP" --error "Want exit?"
 
