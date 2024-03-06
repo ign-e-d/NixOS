@@ -17,7 +17,6 @@
 
     anki-bin
     audacious
-    blender
     clinfo
     drawio
     ffmpeg_5-full
