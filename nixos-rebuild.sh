@@ -17,9 +17,7 @@ EOF
 
 echo '1. Execute "sudo nixos-rebuild switch --flake .#$HOSTNAME"'
 sudo nixos-rebuild switch --flake .#$HOSTNAME &>logs/nixos-rebuild.log || (cat nixos-rebuild.log | grep --color error && false)
-if [ $? -eq 0 ]; then
-  kdialog --title "Stage #1" --msgbox "Executed successfully"
-else
+if [ $? -eq 1 ]; then
   kdialog --title "Stage #1" --yesno "Failed\nRead logs at ~/NixOS/logs\n\nTry again?"
   if [ $? -eq 0 ]; then
     bash /home/a/NixOS/rebuild-wrap.sh
