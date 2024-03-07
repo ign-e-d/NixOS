@@ -42,7 +42,7 @@ then
   git -C $config_folder diff -U0 main origin/main
   current_generation=`readlink /nix/var/nix/profiles/system | cut -d- -f2`
   git -C $config_folder add -A
-  git -C $config_folder commit -m "$current_generation"
+  git -C $config_folder commit -m "$HOSTNAME-$current_generation"
   git -C $config_folder push -u origin
 fi
 
