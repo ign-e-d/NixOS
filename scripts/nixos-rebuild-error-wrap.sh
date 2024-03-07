@@ -4,7 +4,7 @@
 me=$(basename "$0")
 config_folder="/home/a/NixOS"
 
-$config_folder/nixos-rebuild.sh
+$config_folder/scripts/nixos-rebuild.sh
 
 # Error handling
 if [ $? = 0 ]; then
@@ -13,7 +13,7 @@ if [ $? = 0 ]; then
 else
   kdialog --title "$me" --yesno "Failed\n\nTry again?"
   if [ $? = 0 ]; then
-    $config_folder/konsole-wrap.sh
+    $config_folder/scripts/konsole-wrap.sh
   fi
   exit 1
 fi

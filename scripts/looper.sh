@@ -11,7 +11,7 @@ while true; do
         exit 1
     fi
     sleep 3
-    $config_folder/check-updates.sh wait
+    $config_folder/scripts/check-updates.sh wait
     if [ $? = 0 ]; then
         exit 0
     fi

@@ -1,3 +1,7 @@
+#
+# This file is intended for non-host-specific settings.
+#
+
 { config, pkgs, ... }:
 {
   i18n.defaultLocale = "en_US.UTF-8";
@@ -12,7 +16,6 @@
     LC_PAPER = "ru_RU.UTF-8";
     LC_TELEPHONE = "ru_RU.UTF-8";
     LC_TIME = "ru_RU.UTF-8";
-    # LC_ALL = "en_GB.UTF-8";
   };
 }
 

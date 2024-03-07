@@ -30,5 +30,5 @@ else
   else
     exit 0
   fi
-  $config_folder/check-updates.sh
+  $config_folder/scripts/check-updates.sh
 fi

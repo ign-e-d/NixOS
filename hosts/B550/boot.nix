@@ -1,3 +1,7 @@
+#
+# This file is intended for host-specific settings.
+#
+
 { config, pkgs, ... }:
 {
   boot.loader = {
@@ -24,9 +28,4 @@
 
   boot.initrd.kernelModules = [ "amdgpu" ];
   boot.kernelPackages = pkgs.linuxPackagesFor pkgs.linux_latest;
-
-  # temp fix
-  i18n.extraLocaleSettings = {
-    LC_ALL = "en_GB.UTF-8";
-  };
 }

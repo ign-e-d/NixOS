@@ -4,6 +4,8 @@
 
 { config, pkgs, ... }:
 {
-  networking.hostName = "T430s";
+  i18n.extraLocaleSettings = {
+    LC_ALL = "en_GB.UTF-8";
+  };
 }
 

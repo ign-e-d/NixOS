@@ -1,3 +1,7 @@
+#
+# This file is intended for non-host-specific settings.
+#
+
 { config, pkgs, ... }:
 {
   systemd.user.services.NixOS-check-updates = {
@@ -14,8 +18,9 @@
     serviceConfig = {
       Type = "oneshot";
       RemainAfterExit = "yes";
-      ExecStart = "${pkgs.bash}/bin/bash /home/a/NixOS/looper.sh";
+      ExecStart = "${pkgs.bash}/bin/bash /home/a/NixOS/scripts/looper.sh";
     };
+    # Maybe deprecated settings?
     environment = {
       DISPLAY = ":0";
       DBUS_SESSION_BUS_ADDRESS = "unix:path=/run/user/1000/bus";

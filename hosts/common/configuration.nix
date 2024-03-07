@@ -2,7 +2,7 @@
 # This file is intended for non-host-specific settings.
 #
 
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, outputs, ... }:
 {
-  time.timeZone = "Europe/Moscow";
+
 }

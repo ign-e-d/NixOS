@@ -7,4 +7,4 @@ config_folder="/home/a/NixOS"
 read W H < <(xrandr --current | grep -oP '\d+x\d+' | tr x ' ')
 
 # Rebuild script in separate konsole
-konsole -geometry $W\x$H+0+0 -e sh -c $config_folder/nixos-rebuild-error-wrap.sh
+konsole -geometry $W\x$H+0+0 -e sh -c $config_folder/scripts/nixos-rebuild-error-wrap.sh
