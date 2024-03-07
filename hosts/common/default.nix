@@ -4,6 +4,7 @@
     ./environment.nix
     ./hardware.nix
     ./i18n.nix
+    ./networking.nix
     ./nix.nix
     ./nixpkgs.nix
     ./sound.nix

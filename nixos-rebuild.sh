@@ -23,6 +23,8 @@ sudo nixos-generate-config --show-hardware-config > $config_folder/hosts/$HOSTNA
 
 echo ""
 echo "1. Execute sudo nixos-rebuild switch --flake $config_folder#$HOSTNAME"
+# Add all files for correct nixos-rebuild
+git -C $config_folder add -A
 sudo nixos-rebuild switch --flake $config_folder#$HOSTNAME
 
 echo ""
