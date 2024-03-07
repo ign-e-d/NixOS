@@ -16,16 +16,16 @@
         system = "x86_64-linux";
         specialArgs = { inherit inputs outputs; };
         modules = [
-          ./hosts/B550
-          ./hosts/common
+          ./host-specific/B550
+          ./non-host-specific
         ];
       };
       T430s = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         specialArgs = { inherit inputs outputs; };
         modules = [
-          ./hosts/T430s
-          ./hosts/common
+          ./host-specific/T430s
+          ./non-host-specific
         ];
       };
     };
