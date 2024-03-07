@@ -62,6 +62,7 @@
     libsForQt5.kdeconnect-kde
     libsForQt5.kdenlive
     libsForQt5.kdialog
+    libsForQt5.ksshaskpass
     kate
     krita
   ];
