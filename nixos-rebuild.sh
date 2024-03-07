@@ -10,11 +10,16 @@ figlet "#$HOSTNAME"
 
 echo "-----------------------------------------------------------"
 echo "This simple script will do several things:"
+echo "0. Execute sudo nixos-generate-config --show-hardware-config > $config_folder/hosts/$HOSTNAME/hardware-configuration.nix"
 echo "1. Execute sudo nixos-rebuild switch --flake $config_folder#$HOSTNAME;"
 echo "2. Reenable NixOS-check-updates.service;"
 echo "3. Restart NixOS-check-updates.service;"
 echo "4. Commit changes in configuration and push to repository."
 echo "-----------------------------------------------------------"
+
+echo ""
+echo "0. Execute sudo nixos-generate-config --show-hardware-config > $config_folder/hosts/$HOSTNAME/hardware-configuration.nix"
+sudo nixos-generate-config --show-hardware-config > $config_folder/hosts/$HOSTNAME/hardware-configuration.nix
 
 echo ""
 echo "1. Execute sudo nixos-rebuild switch --flake $config_folder#$HOSTNAME"
