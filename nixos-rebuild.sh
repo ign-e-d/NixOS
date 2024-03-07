@@ -44,6 +44,8 @@ then
   git -C $config_folder add -A
   git -C $config_folder commit -m "$HOSTNAME-$current_generation"
   git -C $config_folder push -u origin
+
+  echo $?
 fi
 
 exit 0
