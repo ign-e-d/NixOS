@@ -1,30 +1,34 @@
-cd /home/a/NixOS/
+me=$(basename "$0")
+config_folder="/home/a/NixOS"
 
-git fetch
-if [ $? -eq 128 ]; then
-  kdialog --title "check-updates.sh" --error "git fetch\nFail"
+# Fetch remote repository state
+git -C $config_folder fetch
+if [ $? != 0 ]; then
+  kdialog --title "$me" --error "Failed"
   exit 1
 fi
 
-DIFF=$(git diff main origin/main)
-if [ $? -eq 1 ]; then
-  kdialog --title "check-updates.sh" --error "git diff main origin/main\nFail"
+# Find differences between local and remote repositories
+DIFF=$(git -C $config_folder diff main origin/main)
+if [ $? != 0 ]; then
+  kdialog --title "$me" --error "Failed"
   exit 1
 fi
 
+# If no differences - exit, otherwise pull remote repository
 if [[ -z "$DIFF" ]]; then
-  kdialog --title "check-updates.sh" --msgbox "Configuration is up to date"
+  kdialog --title "$me" --msgbox "Configuration is up to date"
   exit 0
 else
-  kdialog --title "check-updates.sh" --warningyesno "Configuration is outdated.\nDo you want to download new configuration?"
-  if [ $? -eq 0 ]; then
-      git pull origin main
-      if [ $? -eq 1 ]; then
-        kdialog --title "check-updates.sh" --error "git pull origin main\nFail"
+  kdialog --title "$me" --warningyesno "Configuration is outdated.\nDo you want to download new configuration?"
+  if [ $? = 0 ]; then
+      git -C $config_folder pull origin main
+      if [ $? != 0 ]; then
+        kdialog --title "$me" --error "Failed"
         exit 1
       fi
   else
     exit 0
   fi
-  ./check-updates.sh
+  $config_folder/check-updates.sh
 fi

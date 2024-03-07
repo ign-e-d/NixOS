@@ -1,14 +1,19 @@
-COUNT=0
+me=$(basename "$0")
+config_folder="/home/a/NixOS"
 
+counter=0
+limit=3
+
+# Trying run check-updates.sh $limit times
 while true; do
-    if [[ "$COUNTER" -eq 3 ]]; then
-        kdialog --title "looper.sh" --passivepopup "Exited with error"
+    if [[ "$counter" = "$limit" ]]; then
+        kdialog --title "$me" --passivepopup "Counter overflow"
         exit 1
     fi
     sleep 3
-    /home/a/NixOS/check-updates.sh wait
-    if [ $? -eq 0 ]; then
+    $config_folder/check-updates.sh wait
+    if [ $? = 0 ]; then
         exit 0
     fi
-    COUNTER=$[COUNTER + 1]
+    counter=$[counter + 1]
 done

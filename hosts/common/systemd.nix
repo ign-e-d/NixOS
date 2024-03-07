@@ -8,7 +8,6 @@
       pkgs.git
       pkgs.libsForQt5.kdialog
       pkgs.libsForQt5.konsole
-      pkgs.polkit
       pkgs.systemd
       ];
     wantedBy = [ "graphical-session.target" ];
