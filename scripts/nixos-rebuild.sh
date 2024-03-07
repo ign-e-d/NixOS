@@ -26,7 +26,7 @@ sudo nixos-generate-config --show-hardware-config > $config_folder/host-specific
 
 echo ""
 echo "1. Execute sudo nixos-rebuild switch --flake $config_folder#$HOSTNAME"
-sudo nixos-rebuild switch --flake $config_folder#$HOSTNAME
+sudo nixos-rebuild --verbose switch --flake $config_folder#$HOSTNAME
 
 echo ""
 echo "2. Reenable NixOS-check-updates.service"

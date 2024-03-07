@@ -9,6 +9,7 @@
     path = [
       pkgs.bash
       pkgs.coreutils
+      pkgs.openssh
       pkgs.git
       pkgs.libsForQt5.kdialog
       pkgs.libsForQt5.konsole
