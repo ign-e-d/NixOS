@@ -17,12 +17,15 @@ echo "4. Restart NixOS-check-updates.service;"
 echo "5. Commit changes in configuration and push to repository."
 echo "-----------------------------------------------------------"
 
-# Add all files for correct nixos-rebuild
+# Add all files for the correct nixos-generate-config
 git -C $config_folder add -A
 
 echo ""
 echo "1. Execute sudo nixos-generate-config --show-hardware-config > $config_folder/system/host-specific/$HOSTNAME/hardware-configuration.nix"
 sudo nixos-generate-config --show-hardware-config > $config_folder/system/host-specific/$HOSTNAME/hardware-configuration.nix
+
+# Add all files for the correct nixos-rebuil
+git -C $config_folder add -A
 
 echo ""
 echo "2. Execute sudo nixos-rebuild switch --flake $config_folder#$HOSTNAME"
