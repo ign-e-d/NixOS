@@ -2,7 +2,7 @@
 #! nix-shell -i bash git kdialog figlet -p bash git kdialog figlet
 
 me=$(basename "$0")
-config_folder="/home/a/NixOS"
+config_folder=$(dirname "$(dirname "$0")")
 
 $config_folder/scripts/nixos-rebuild.sh
 

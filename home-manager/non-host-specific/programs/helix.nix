@@ -1,10 +1,14 @@
+#
+# This file is intended for non-host-specific home-manager settings.
+#
+
 { config, pkgs, inputs, ... }:
 {
   programs.helix = {
     enable = true;
     package = inputs.helix.packages."${pkgs.system}".helix;
     settings = {
-      theme = "gruvbox"; #material_darker
+      theme = "gruvbox";
       editor = {
         cursor-shape = {
           normal = "block";

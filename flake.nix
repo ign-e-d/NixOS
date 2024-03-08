@@ -12,20 +12,22 @@
 
   outputs = { self, nixpkgs, home-manager, ... } @ inputs: let inherit (self) outputs; in {
     nixosConfigurations = {
+      #TODO: change B550 to your hostname
       B550 = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         specialArgs = { inherit inputs outputs; };
         modules = [
-          ./host-specific/B550
-          ./non-host-specific
+          #TODO: change T430s to your hostname
+          ./system/host-specific/B550
         ];
       };
+      #TODO: change T430s to your hostname
       T430s = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         specialArgs = { inherit inputs outputs; };
         modules = [
-          ./host-specific/T430s
-          ./non-host-specific
+          #TODO: change T430s to your hostname
+          ./system/host-specific/T430s
         ];
       };
     };

@@ -1,6 +1,8 @@
 { config, pkgs, inputs, ... }:
 {
   imports = [
+    ../../non-host-specific
+
     ./boot.nix
     ./configuration.nix
     ./environment.nix

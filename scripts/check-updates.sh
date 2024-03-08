@@ -1,5 +1,5 @@
 me=$(basename "$0")
-config_folder="/home/a/NixOS"
+config_folder=$(dirname "$(dirname "$0")")
 
 # Fetch remote repository state
 git -C $config_folder fetch
@@ -15,7 +15,7 @@ if [ $? != 0 ]; then
   exit 1
 fi
 
-# If no differences - exit, otherwise pull remote repository
+# If no differences - exit, otherwise suggest to pull remote repository
 if [[ -z "$DIFF" ]]; then
   kdialog --title "$me" --msgbox "Configuration is up to date"
   exit 0

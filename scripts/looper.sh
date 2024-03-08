@@ -1,5 +1,5 @@
 me=$(basename "$0")
-config_folder="/home/a/NixOS"
+config_folder=$(dirname "$(dirname "$0")")
 
 counter=0
 limit=3

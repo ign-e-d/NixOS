@@ -13,7 +13,7 @@
   home-manager = {
     extraSpecialArgs = { inherit inputs outputs; };
     users = {
-      a = import ../../home-manager;
+      a = import ../../../home-manager/host-specific/T430s;
     };
   };
 }
