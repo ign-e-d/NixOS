@@ -6,6 +6,7 @@
     ./boot.nix
     ./configuration.nix
     ./environment.nix
+    ./fonts.nix
     ./hardware-configuration.nix
     ./hardware.nix
     ./i18n.nix
@@ -18,5 +19,6 @@
     ./systemd.nix
     ./time.nix
     ./users.nix
+    ./virtualisation.nix
   ];
 }

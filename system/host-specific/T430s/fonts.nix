@@ -4,5 +4,5 @@
 
 { config, pkgs, ... }:
 {
-    users.extraGroups.vboxusers.members = [ "a" ];
+
 }
