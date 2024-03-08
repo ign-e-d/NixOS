@@ -38,5 +38,21 @@
         S-tab = "unindent";
       };
     };
+    languages = {
+      language = [{
+        name = "cpp";
+        indent = {
+          tab-width = 4;
+          unit = "    ";
+        };
+      }
+      {
+        name = "nix";
+        indent = {
+          tab-width = 2;
+          unit = "  ";
+        };
+      }];
+    };
   };
 }

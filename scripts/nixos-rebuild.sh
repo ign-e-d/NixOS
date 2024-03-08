@@ -24,9 +24,6 @@ echo ""
 echo "1. Execute sudo nixos-generate-config --show-hardware-config > $config_folder/system/host-specific/$HOSTNAME/hardware-configuration.nix"
 sudo nixos-generate-config --show-hardware-config > $config_folder/system/host-specific/$HOSTNAME/hardware-configuration.nix
 
-# Add all files for the correct nixos-rebuil
-git -C $config_folder add -A
-
 echo ""
 echo "2. Execute sudo nixos-rebuild switch --flake $config_folder#$HOSTNAME"
 sudo nixos-rebuild --verbose switch --flake $config_folder#$HOSTNAME
