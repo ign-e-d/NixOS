@@ -70,7 +70,7 @@ in
         "$mod, O, exec, $rebuild"
         "$mod, P, exec, $check-updates"
 
-        # Waybar
+        # Waybar, doesn't work?
         "$mod, K, exec, pkill -SIGUSR1 ${pkgs.waybar}/bin/waybar"
         "$mod, L, exec, pkill -SIGUSR2 ${pkgs.waybar}/bin/waybar"
 
@@ -79,6 +79,12 @@ in
         "$mod, right, movefocus, r"
         "$mod, up, movefocus, u"
         "$mod, down, movefocus, d"
+
+        # Move windows
+        "$mod SHIFT, left, swapwindow, l"
+        "$mod SHIFT, right, swapwindow, r"
+        "$mod SHIFT, up, swapwindow, u"
+        "$mod SHIFT, down, swapwindow, d"
       ];
     };
   };
