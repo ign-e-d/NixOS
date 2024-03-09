@@ -13,6 +13,12 @@ in
 {
   programs.waybar = {
     enable = true;
+    style = ''
+      window#waybar {
+        background: transparent;
+        border-bottom: none;
+      }
+    '';
   };
 
   programs.wofi = {
