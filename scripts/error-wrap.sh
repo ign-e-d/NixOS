@@ -13,7 +13,7 @@ if [ $? = 0 ]; then
 else
   kdialog --title "$me" --yesno "Failed\n\nTry again?"
   if [ $? = 0 ]; then
-    $config_folder/scripts/konsole-wrap.sh
+    $config_folder/scripts/kitty-wrap.sh
   fi
   exit 1
 fi
