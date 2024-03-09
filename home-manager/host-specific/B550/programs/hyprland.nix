@@ -149,7 +149,8 @@ in
       # Some default env vars.
       env = [
         "XCURSOR_SIZE,24"
-        "QT_QPA_PLATFORMTHEME,qt5ct"
+#        "QT_QPA_PLATFORMTHEME,qt5ct"
+        "WLR_NO_HARDWARE_CURSORS,1"
       ];
 
       input = {

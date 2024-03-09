@@ -60,14 +60,11 @@
     steamcmd
     steam-run
 
-    libsForQt5.yakuake
-    libsForQt5.ark
-    libsForQt5.kruler
-    libsForQt5.kdeconnect-kde
-    libsForQt5.kdenlive
-    libsForQt5.kdialog
-    libsForQt5.ksshaskpass
-    kate
+    kdePackages.yakuake
+    kdePackages.ark
+    kdePackages.kdeconnect-kde
+    kdePackages.kdialog
+    kdePackages.kate
     krita
   ];
 }
