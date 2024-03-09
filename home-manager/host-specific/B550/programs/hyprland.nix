@@ -71,8 +71,8 @@ in
         "$mod, P, exec, $check-updates"
 
         # Waybar
-        "$mod, N, exec, pkill -SIGUSR1 $waybar"
-        "$mod, M, exec, pkill -SIGUSR2 $waybar"
+        "$mod, K, exec, pkill -SIGUSR1 $waybar"
+        "$mod, L, exec, pkill -SIGUSR2 $waybar"
 
         # Move focus with mainMod + arrow keys
         "$mod, left, movefocus, l"
