@@ -101,8 +101,6 @@ in
     backgrounds = [
       {
         path = "/home/a/Pictures/screenlock.png";
-      }
-      {
         color = "rgba(25, 20, 20, 1.0)";
       }
     ];
@@ -114,6 +112,7 @@ in
     labels = [
       {
         text = "$USER";
+        color = "rgba(0, 0, 0, 1.0)";
       }
     ];
   };
