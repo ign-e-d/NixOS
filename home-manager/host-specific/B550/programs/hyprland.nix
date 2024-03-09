@@ -10,7 +10,7 @@ let
 
     sleep 1
 
-    ${pkgs.swww}/bin/swww img /home/a/Pictures/gruv-material-texture.png &
+    ${pkgs.swww}/bin/swww img /home/a/Pictures/flowers-2.jpg &
   '';
 in
 {
