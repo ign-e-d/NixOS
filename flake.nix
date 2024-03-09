@@ -9,6 +9,7 @@
     };
     helix.url = "github:helix-editor/helix/master";
     hyprland.url = "github:hyprwm/Hyprland";
+    hyprlock.url = "github:hyprwm/Hyprlock";
   };
 
   outputs = { self, nixpkgs, home-manager, ... } @ inputs: let inherit (self) outputs; in {

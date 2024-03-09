@@ -7,22 +7,100 @@ let
   startupScript = pkgs.pkgs.writeShellScriptBin "start" ''
     ${pkgs.waybar}/bin/waybar &
     ${pkgs.swww}/bin/swww init &
-    ${pkgs.swww}/bin/swww img /home/a/Pictures/The-Wind-Rises.jpg &
+    ${pkgs.swww}/bin/swww img /home/a/Pictures/wallpaper.jpg &
   '';
 in
 {
   programs.waybar = {
     enable = true;
     style = ''
-      window#waybar {
-        background: transparent;
-        border-bottom: none;
+      * {   
+        font-family: DroidSansMono Nerd Font;
+        font-size: 15px;
+        border-radius: 0px;
       }
+
+      window#waybar {
+        background-color: rgba(50, 50, 50, 0.9);
+        color: #ffffff;
+        transition-property: background-color;
+        transition-duration: .5s;
+      }
+
+          #clock,
+          #workspaces,
+          #custom-launcher {
+            color: #e5e5e5;
+            border-radius: 6px;
+            padding: 2px 10px;
+            background-color: #252733;
+            border-radius: 8px;
+            font-size: 16px;
+
+            margin-left: 4px;
+            margin-right: 4px;
+
+            margin-top: 8.5px;
+            margin-bottom: 8.5px;
+          }
     '';
+    settings.mainBar = {
+      position= "top";
+      layer= "top";
+      height= 5;
+      margin-top= 0;
+      margin-bottom= 0;
+      margin-left= 0;
+      margin-right= 0;
+      modules-left = ["custom/launcher" "hyprland/workspaces"];
+      modules-center= [
+        "clock"
+      ];
+      "hyprland/workspaces" = {
+        format = "{name}";
+        all-outputs = true;
+        on-click = "activate";
+        format-icons = {
+          active = " 󱎴";
+          default = "󰍹";
+        };
+        persistent-workspaces = {
+          "1" = [];
+          "2" = [];
+          "3" = [];
+          "4" = [];
+          "5" = [];
+          "6" = [];
+          "7" = [];
+          "8" = [];
+          "9" = [];
+        };
+      };
+      "custom/launcher" = {
+        format = "󱄅";
+        on-click = "rofi -show drun &";
+      };
+      clock = {
+          format = " {:%H:%M}";
+          tooltip= "true";
+          tooltip-format= "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
+          format-alt= " {:%d/%m}";
+      };
+    };
   };
 
   programs.wofi = {
     enable = true;
+  };
+
+  programs.hyprlock = {
+    enable = true;
+    general = {
+      
+    };
+    backgrounds = [{
+      path = "/home/a/Pictures/wallpaper.jpg";
+    }];
   };
 
   wayland.windowManager.hyprland = {
@@ -36,6 +114,11 @@ in
         "DP-1, 1920x1080@60, 1920x0, 1"
       ];
 
+      workspace = [
+        "HDMI-A-1, 1"
+        "DP-1, 2"
+      ];
+
       "$mod" = "SUPER";
 
       "$terminal" = "${pkgs.kitty}/bin/kitty";
@@ -45,6 +128,7 @@ in
       "$rebuild" = "/home/a/NixOS/scripts/kitty-wrap.sh";
       "$check-updates" = "/home/a/NixOS/scripts/check-updates.sh";
       "$waybar" = "${pkgs.waybar}/bin/waybar";
+      "$lockScreen" = "${pkgs.hyprlock}/bin/hyprlock";
 
       # Some default env vars.
       env = [
@@ -77,8 +161,11 @@ in
         "$mod, P, exec, $check-updates"
 
         # Waybar, doesn't work?
-        "$mod, K, exec, pkill -SIGUSR1 ${pkgs.waybar}/bin/waybar"
-        "$mod, L, exec, pkill -SIGUSR2 ${pkgs.waybar}/bin/waybar"
+        "$mod, U, exec, pkill -SIGUSR1 .waybar-wrapped"
+        "$mod, I, exec, pkill -SIGUSR2 .waybar-wrapped"
+
+        # Hyprlock
+        "$mod, L, exec, $lockScreen"
 
         # Move focus with mainMod + arrow keys
         "$mod, left, movefocus, l"

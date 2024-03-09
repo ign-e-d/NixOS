@@ -12,8 +12,11 @@
 
   home-manager = {
     extraSpecialArgs = { inherit inputs outputs; };
-    users = {
-      a = import ../../../home-manager/host-specific/B550;
+    users.a = {
+      imports = [
+        ../../../home-manager/host-specific/B550
+        inputs.hyprlock.homeManagerModules.hyprlock
+      ];
     };
   };
 }
