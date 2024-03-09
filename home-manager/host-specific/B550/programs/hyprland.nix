@@ -26,7 +26,7 @@ in
     enable = true;
 
     settings = {
-      exec-once = ''${startupScript}/bin/start'';
+      exec-once = ''kitty & ${startupScript}/bin/start'';
 
       monitor = [
         "HDMI-1, 1920x1080@75, 0x0, 1"
@@ -35,10 +35,10 @@ in
 
       "$mod" = "SUPER";
 
-      "$terminal" = "kitty";
-      "$fileManager" = "dolphin";
-      "$browser" = "firefox";
-      "$menu" = "wofi --show drun";
+      "$terminal" = "${pkgs.kitty}/bin/kitty";
+      "$fileManager" = "${pkgs.libsForQt5.dolphin}/bin/dolphin";
+      "$browser" = "${pkgs.firefox}/bin/firefox";
+      "$menu" = "${pkgs.wofi}/bin/wofi --show drun";
 
       # Some default env vars.
       env = [
@@ -57,13 +57,13 @@ in
       ];
 
       bind = [
-        "$mod F, exec, $browser"
-        "$mod Q, exec, $terminal"
-        "$mod C, killactive"
-        "$mod M, exit"
-        "$mod E, exec, $fileManager"
-        "$mod V, togglefloating"
-        "$mod R, exec, $menu"
+        "$mod, F, exec, $browser"
+        "$mod, Q, exec, $terminal"
+        "$mod, C, killactive"
+        "$mod, M, exit"
+        "$mod, E, exec, $menu"
+        "$mod, V, togglefloating"
+        "$mod, R, exec, $menu"
 
         # Move focus with mainMod + arrow keys
         "$mod, left, movefocus, l"
