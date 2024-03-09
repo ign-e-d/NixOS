@@ -7,10 +7,7 @@ let
   startupScript = pkgs.pkgs.writeShellScriptBin "start" ''
     ${pkgs.waybar}/bin/waybar &
     ${pkgs.swww}/bin/swww init &
-
-    sleep 1
-
-    ${pkgs.swww}/bin/swww img /home/a/Pictures/flowers-2.jpg &
+    ${pkgs.swww}/bin/swww img /home/a/Pictures/The-Wind-Rises.jpg &
   '';
 in
 {
@@ -41,6 +38,7 @@ in
       "$menu" = "${pkgs.wofi}/bin/wofi --show drun";
       "$rebuild" = "/home/a/NixOS/scripts/kitty-wrap.sh";
       "$check-updates" = "/home/a/NixOS/scripts/check-updates.sh";
+      "$waybar" = "${pkgs.waybar}/bin/waybar";
 
       # Some default env vars.
       env = [
@@ -49,7 +47,8 @@ in
       ];
 
       input = {
-        kb_layout = "us";
+        kb_layout = "us,ru,fi";
+        kb_options = "grp:alt_shift_toggle";
       };
 
       bindm = [
@@ -67,8 +66,13 @@ in
         "$mod, V, togglefloating"
         "$mod, R, exec, $menu"
 
+        # Scripts
         "$mod, O, exec, $rebuild"
         "$mod, P, exec, $check-updates"
+
+        # Waybar
+        "$mod, N, exec, pkill -SIGUSR1 $waybar"
+        "$mod, M, exec, pkill -SIGUSR2 $waybar"
 
         # Move focus with mainMod + arrow keys
         "$mod, left, movefocus, l"
