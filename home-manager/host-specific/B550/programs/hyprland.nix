@@ -98,9 +98,24 @@ in
     general = {
       
     };
-    backgrounds = [{
-      path = "/home/a/Pictures/wallpaper.jpg";
-    }];
+    backgrounds = [
+      {
+        path = "/home/a/Pictures/screenlock.png";
+      }
+      {
+        color = "rgba(25, 20, 20, 1.0)";
+      }
+    ];
+    input-fields = [
+      {
+        placeholder_text = "";
+      }
+    ];
+    labels = [
+      {
+        text = "$USER";
+      }
+    ];
   };
 
   wayland.windowManager.hyprland = {
