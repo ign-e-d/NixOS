@@ -14,6 +14,7 @@
     ./nix.nix
     ./nixpkgs.nix
     ./programs.nix
+    ./qt.nix
     ./services.nix
     ./sound.nix
     ./system.nix
