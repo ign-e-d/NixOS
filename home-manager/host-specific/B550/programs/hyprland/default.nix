@@ -1,7 +1,6 @@
 { config, pkgs, inputs, ... }:
 {
   imports = [
-    ./hyprland
-    ./waybar
+    ./hyprland.nix
   ];
 }

@@ -13,6 +13,7 @@
     ./networking.nix
     ./nix.nix
     ./nixpkgs.nix
+    ./programs.nix
     ./services.nix
     ./sound.nix
     ./system.nix
@@ -20,5 +21,6 @@
     ./time.nix
     ./users.nix
     ./virtualisation.nix
+    ./xdg.nix
   ];
 }
