@@ -8,14 +8,58 @@
     blender
     swww
 
-    utterly-nord-plasma
+    qt5.qtwayland
+    libsForQt5.qtstyleplugin-kvantum
+    libsForQt5.lightly
+    catppuccin-kvantum
   ];
 
-      # https://discourse.nixos.org/t/guide-to-installing-qt-theme/35523/2
-    xdg.configFile = {
-      "Kvantum/Utterly-Nord-Solid-Plasma/Utterly-Nord-Solid/Utterly-Nord-Solid.kvconfig".source = "${pkgs.utterly-nord-plasma}/share/Kvantum/Utterly-Nord-Solid/Utterly-Nord-Solid.kvconfig";
-      "Kvantum/Utterly-Nord-Solid-Plasma/Utterly-Nord-Solid/Utterly-Nord-Solid.svg".source = "${pkgs.utterly-nord-plasma}/share/Kvantum/Utterly-Nord-Solid/Utterly-Nord-Solid.svg";
-      "Kvantum/Utterly-Nord-Solid-Plasma/Utterly-Nord-Solid/Nord.patchconfig".source = "${pkgs.utterly-nord-plasma}/share/Kvantum/Utterly-Nord-Solid/Nord.patchconfig";
-      "Kvantum/kvantum.kvconfig".text = "[General]\ntheme=Utterly-Nord-Solid";
+  #home.pointerCursor = {
+    #gtk.enable = true;
+    # x11.enable = true;
+    #package = pkgs.bibata-cursors;
+    #name = "Bibata-Modern-Classic";
+    #size = 16;
+  #};
+
+  #gtk = {
+  #  enable = true;
+  #  theme = {
+  #    package = pkgs.flat-remix-gtk;
+  #    name = "Flat-Remix-GTK-Grey-Darkest";
+  #  };
+
+  #  iconTheme = {
+  #    package = pkgs.gnome.adwaita-icon-theme;
+  #    name = "Adwaita";
+  #  };
+
+  #  font = {
+  #    name = "Sans";
+  #    size = 11;
+  #  };
+  #};
+
+  qt = {
+    enable = true;
+    platformTheme = "qtct";
+    style = {
+      package = pkgs.catppuccin-kvantum;
+      name = "kvantum";
     };
+  };
+
+  xdg.configFile = {
+    "Kvantum/Catppuccin-Frappe-Blue/Catppuccin-Frappe-Blue/Catppuccin-Frappe-Blue.kvconfig".source = "${pkgs.catppuccin-kvantum}/share/Kvantum/Catppuccin-Frappe-Blue/Catppuccin-Frappe-Blue.kvconfig";
+    "Kvantum/Catppuccin-Frappe-Blue/Catppuccin-Frappe-Blue/Catppuccin-Frappe-Blue.svg".source = "${pkgs.catppuccin-kvantum}/share/Kvantum/Catppuccin-Frappe-Blue/Catppuccin-Frappe-Blue.svg";
+  };
+
+#  qt = {
+#    enable = true;
+#    platformTheme = "kde";
+#    style = {
+#      package = pkgs.libsForQt5.breeze-qt5;
+#      name = "breeze";
+#    };
+#  };
 }
