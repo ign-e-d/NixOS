@@ -3,36 +3,91 @@
 #
 
 { config, pkgs, inputs, ... }:
+let
+  data = {
+    font-family = "DroidSansMono Nerd Font";
+    font-size = "15px";
+    font-weight = "bold";
+    text-color = "#cdd6f4";
+  };
+in
 {
   programs.waybar.style = ''
     * {
-    font-family: DroidSansMono Nerd Font;
-    font-size: 15px;
-    border-radius: 0px;
+      font-family: ${data.font-family};
+      font-size: ${data.font-size};
+      font-weight: ${data.font-weight};
+      border-radius: 0px;
     }
 
     window#waybar {
-    background-color: rgba(50, 50, 50, 0.9);
-    color: #ffffff;
-    transition-property: background-color;
-    transition-duration: .5s;
+      background: none;
     }
 
-        #clock,
-        #workspaces,
-        #custom-launcher {
-        color: #e5e5e5;
-        border-radius: 6px;
-        padding: 2px 10px;
-        background-color: #252733;
-        border-radius: 8px;
-        font-size: 16px;
+    #workspaces {
+      font-size: 18px;
+      padding-left: 15px;
+    }
 
-        margin-left: 4px;
-        margin-right: 4px;
+    #workspaces button {
+      color: ${data.text-color};
+      padding-left: 6px;
+      padding-right: 6px;
+    }
 
-        margin-top: 8.5px;
-        margin-bottom: 8.5px;
-        }
+    #workspaces button.empty {
+        color: #6c7086;
+    }
+
+    #workspaces button.active {
+        color: #b4befe;
+    }
+
+    #language, #tray, #pulseaudio, #network, #cpu, #memory, #disk, #clock {
+        font-size: ${data.font-size};
+        color: ${data.text-color};
+    }
+
+    #cpu {
+        padding-left: 15px;
+        padding-right: 9px;
+        margin-left: 7px;
+    }
+    #memory {
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+    #disk {
+        padding-left: 9px;
+        padding-right: 15px;
+    }
+
+    #tray {
+        padding: 0 20px;
+        margin-left: 7px;
+    }
+
+    #pulseaudio {
+        padding-left: 15px;
+        padding-right: 9px;
+        margin-left: 7px;
+    }
+    #network {
+        padding-left: 9px;
+        padding-right: 15px;
+    }
+    
+    #clock {
+        padding-left: 9px;
+        padding-right: 15px;
+    }
+
+    #custom-launcher {
+        font-size: 20px;
+        color: #b4befe;
+        font-weight: ${data.font-weight};
+        padding-left: 10px;
+        padding-right: 15px;
+    }
     '';
 }

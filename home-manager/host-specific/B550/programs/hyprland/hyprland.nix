@@ -8,36 +8,12 @@ let
     ${pkgs.waybar}/bin/waybar &
     ${pkgs.swww}/bin/swww init &
     sleep 1
-    ${pkgs.swww}/bin/swww img /home/a/Pictures/wallpaper.jpg &
+    ${pkgs.swww}/bin/swww img /home/a/NixOS/pictures/wallpaper.jpg &
   '';
 in
 {
-  programs.wofi = {
+  programs.rofi = {
     enable = true;
-  };
-
-  programs.hyprlock = {
-    enable = true;
-    general = {
-      
-    };
-    backgrounds = [
-      {
-        path = "/home/a/Pictures/screenlock.png";
-        color = "rgba(25, 20, 20, 1.0)";
-      }
-    ];
-    input-fields = [
-      {
-        placeholder_text = "";
-      }
-    ];
-    labels = [
-      {
-        text = "$USER";
-        color = "rgba(0, 0, 0, 1.0)";
-      }
-    ];
   };
 
   wayland.windowManager.hyprland = {
@@ -62,7 +38,7 @@ in
       "$terminal" = "${pkgs.kitty}/bin/kitty";
       "$fileManager" = "${pkgs.libsForQt5.dolphin}/bin/dolphin";
       "$browser" = "${pkgs.firefox}/bin/firefox";
-      "$menu" = "${pkgs.wofi}/bin/wofi --show drun";
+      "$menu" = "${pkgs.rofi}/bin/rofi -show drun &";
       "$rebuild" = "/home/a/NixOS/scripts/kitty-wrap.sh";
       "$check-updates" = "/home/a/NixOS/scripts/check-updates.sh";
       "$waybar" = "${pkgs.waybar}/bin/waybar";
@@ -117,6 +93,14 @@ in
         "$mod SHIFT, right, swapwindow, r"
         "$mod SHIFT, up, swapwindow, u"
         "$mod SHIFT, down, swapwindow, d"
+
+        # Workspaces
+        "$mod, 1, workspace, 1"
+        "$mod, 2, workspace, 2"
+
+        # Move window to workspace
+        "$mod SHIFT, 1, movetoworkspace, 1"
+        "$mod SHIFT, 2, movetoworkspace, 2"
       ];
     };
   };
