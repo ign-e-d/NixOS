@@ -7,8 +7,8 @@ let
   configRepo = pkgs.fetchFromGitHub {
     owner = "ign-e-d";
     repo = "NixOS";
-    rev = "c9bca767bbf1ecbe91d4c1f790ec8f29134c3b28";
-    sha256 = "0icbq0znhn12xp16yp65hhq1annb9r33q995iqn0xl9ycblwhgdw";
+    rev = "5fa8918fdfedb3cde6313c823d0f4e13060b02f7";
+    sha256 = "0ll0dczhl3gfdy3fni0vw7k60ak12lagm72jhwxb0k2jpmn24p63";
   };
 in
 pkgs.stdenv.mkDerivation {
