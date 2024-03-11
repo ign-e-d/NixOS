@@ -69,6 +69,12 @@ in
         kb_options = "grp:alt_shift_toggle";
       };
 
+      general = {
+        gaps_in = 5;
+        gaps_out = 5;
+        border_size = 3;
+      };
+
       bindm = [
         "$mod, mouse:272, movewindow"
         "$mod, mouse:273, resizewindow"
