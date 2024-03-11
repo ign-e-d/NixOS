@@ -11,6 +11,7 @@ in
   home.packages = with pkgs; [
     blender
     swww
+    hyprshot
 
     qt5.qtwayland
     #libsForQt5.qtstyleplugin-kvantum

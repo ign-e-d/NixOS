@@ -43,6 +43,7 @@ in
       "$check-updates" = "/home/a/NixOS/scripts/check-updates.sh";
       "$waybar" = "${pkgs.waybar}/bin/waybar";
       "$lockScreen" = "${pkgs.hyprlock}/bin/hyprlock";
+      "$screenShot" = "${pkgs.hyprshot}/bin/hyprshot";
 
       # Some default env vars.
       env = [
@@ -101,6 +102,9 @@ in
         # Move window to workspace
         "$mod SHIFT, 1, movetoworkspace, 1"
         "$mod SHIFT, 2, movetoworkspace, 2"
+
+        # Hyprshot
+        "$mod, PRINT, exec, $screenShot -m region"
       ];
     };
   };

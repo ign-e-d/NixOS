@@ -16,4 +16,9 @@
     QT_AUTO_SCREEN_SCALE_FACTOR = "1";
     MOZ_ENABLE_WAYLAND = "1";
   };
+
+  # sddm experiments
+  #environment.systemPackages = with pkgs; [
+  #  (callPackage ./sddm.nix {})
+  #];
 }
