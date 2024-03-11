@@ -13,26 +13,21 @@ in
     swww
     hyprshot
 
+    airshipper
+
     qt5.qtwayland
-    #libsForQt5.qtstyleplugin-kvantum
-    #libsForQt5.lightly
-    #(catppuccin-kvantum.override {
-    #  accent = catppuccin-accent;
-    #  variant = catppuccin-variant;
-    #})
   ];
 
   qt = {
     enable = true;
     platformTheme = "qtct";
-    #style = {
-    #  package = pkgs.catppuccin-kvantum;
-    #  name = "kvantum";
-    #};
   };
 
-  #xdg.configFile = {
-  #  "Kvantum/Catppuccin-${catppuccin-variant}-${catppuccin-accent}/Catppuccin-${catppuccin-variant}-${catppuccin-accent}/Catppuccin-${catppuccin-variant}-${catppuccin-accent}.kvconfig".source = "${pkgs.catppuccin-kvantum}/share/Kvantum/Catppuccin-${catppuccin-variant}-${catppuccin-accent}/Cattpuccin-${catppuccin-variant}-${catppuccin-accent}.kvconfig";
-  #  "Kvantum/Catppuccin-${catppuccin-variant}-${catppuccin-accent}/Catppuccin-${catppuccin-variant}-${catppuccin-accent}/Catppuccin-${catppuccin-variant}-${catppuccin-accent}.svg".source = "${pkgs.catppuccin-kvantum}/share/Kvantum/Catppuccin-${catppuccin-variant}-${catppuccin-accent}/Cattpuccin-${catppuccin-variant}-${catppuccin-accent}.svg";
-  #};
+  gtk = {
+    enable = true;
+    theme = {
+      package = pkgs.adw-gtk3;
+      name = "adw-gtk3";
+    };
+  };
 }

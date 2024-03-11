@@ -22,7 +22,7 @@ pkgs.stdenv.mkDerivation {
   installPhase = ''
     mkdir -p $out
     cp -R ./src/catppuccin-latte/* $out/
-    cp -r ${configRepo}/pictures/wallpaper.jpg $out/backgrounds/wall.jpg
+    cp -r ${configRepo}/pictures/screenlock.png $out/backgrounds/wall.jpg
     cd $out/
     rm theme.conf
     cp -r ${configRepo}/misc/theme.conf $out/
