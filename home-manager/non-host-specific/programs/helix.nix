@@ -47,6 +47,13 @@
         };
       }
       {
+        name = "c";
+        indent = {
+          tab-width = 4;
+          unit = "    ";
+        };
+      }
+      {
         name = "nix";
         indent = {
           tab-width = 2;

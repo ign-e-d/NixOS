@@ -10,10 +10,12 @@ in
 {
   home.packages = with pkgs; [
     blender
+    
     swww
     hyprshot
-
-    airshipper
+    dunst
+    libnotify
+    networkmanager
 
     qt5.qtwayland
   ];

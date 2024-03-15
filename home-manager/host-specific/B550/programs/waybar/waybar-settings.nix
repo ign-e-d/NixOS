@@ -38,8 +38,10 @@
         format = "{icon}";
         on-click= "activate";
         format-icons= {
-            "1"= "󰈹";
-            "2"= "";
+            "1"= "1";
+            "2"= "2";
+            "3" = "3";
+            "4" = "4";
             urgent= "";
             default = "";
             sort-by-number= true;
@@ -47,6 +49,8 @@
         persistent-workspaces = {
             "1"= [];
             "2"= [];
+            "3" = [];
+            "4" = [];
         };
       };
 
@@ -54,7 +58,7 @@
         format = " {:%H:%M:%S}";
         tooltip = "true";
         tooltip-format = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
-        format-alt = " {:%d/%m}";
+        format-alt = " {:%d/%m/%y}";
         interval = 1;
       };
 

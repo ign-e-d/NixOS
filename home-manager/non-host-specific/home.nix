@@ -65,6 +65,7 @@
     libsForQt5.kdeconnect-kde
     libsForQt5.kdialog
     libsForQt5.kate
+    libsForQt5.filelight
     krita
   ];
 }

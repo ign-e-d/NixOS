@@ -5,10 +5,11 @@
 { config, pkgs, inputs, ... }:
 let
   startupScript = pkgs.pkgs.writeShellScriptBin "start" ''
-    ${pkgs.waybar}/bin/waybar &
     ${pkgs.swww}/bin/swww init &
     sleep 1
     ${pkgs.swww}/bin/swww img /home/a/NixOS/pictures/wallpaper.jpg &
+    ${pkgs.waybar}/bin/waybar &
+    ${pkgs.dunst}/bin/dunst &
   '';
 in
 {
@@ -31,6 +32,8 @@ in
       workspace = [
         "HDMI-A-1, 1"
         "DP-1, 2"
+        "HDMI-A-1, 3"
+        "DP-1, 4"
       ];
 
       "$mod" = "SUPER";
@@ -44,6 +47,7 @@ in
       "$waybar" = "${pkgs.waybar}/bin/waybar";
       "$lockScreen" = "${pkgs.hyprlock}/bin/hyprlock";
       "$screenShot" = "${pkgs.hyprshot}/bin/hyprshot";
+      "$networkManager" = "${pkgs.networkmanager}/bin/nmtui";
 
       # Some default env vars.
       env = [
@@ -89,6 +93,7 @@ in
         "$mod, E, exec, $fileManager"
         "$mod, V, togglefloating"
         "$mod, R, exec, $menu"
+        "$mod, N, exec, $networkManager"
 
         # Scripts
         "$mod, O, exec, $rebuild"
@@ -116,10 +121,14 @@ in
         # Workspaces
         "$mod, 1, workspace, 1"
         "$mod, 2, workspace, 2"
+        "$mod, 3, workspace, 3"
+        "$mod, 4, workspace, 4"
 
         # Move window to workspace
         "$mod SHIFT, 1, movetoworkspace, 1"
         "$mod SHIFT, 2, movetoworkspace, 2"
+        "$mod SHIFT, 3, movetoworkspace, 3"
+        "$mod SHIFT, 4, movetoworkspace, 4"
 
         # Hyprshot
         "$mod, PRINT, exec, $screenShot -m region"
