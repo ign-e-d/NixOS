@@ -30,6 +30,7 @@
     htop
     kiwix
     linuxKernel.packages.linux_5_4.wireguard
+    libresprite
     lm_sensors
     mpv
     neofetch
