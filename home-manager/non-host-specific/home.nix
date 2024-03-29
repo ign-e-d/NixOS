@@ -43,6 +43,7 @@
     runelite
     systemd
     tor-browser-bundle-bin
+    texstudio
     unison
     vlc
     wireguard-tools
