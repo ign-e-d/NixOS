@@ -44,6 +44,7 @@
     systemd
     tor-browser-bundle-bin
     texstudio
+    texliveFull
     unison
     vlc
     wireguard-tools
