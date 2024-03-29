@@ -22,6 +22,7 @@
     anki-bin
     audacious
     clinfo
+    corefonts #for latex
     drawio
     ffmpeg_5-full
     firefox
@@ -47,6 +48,7 @@
     texliveFull
     unison
     vlc
+    vistafonts #for latex
     wireguard-tools
     wmctrl
     xclip
