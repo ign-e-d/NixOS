@@ -10,6 +10,9 @@
     settings = {
       theme = "gruvbox";
       editor = {
+        file-picker = {
+          hidden = false;
+        };
         cursor-shape = {
           normal = "block";
           insert = "bar";
@@ -58,6 +61,13 @@
         indent = {
           tab-width = 2;
           unit = "  ";
+        };
+      }
+      {
+        name = "python";
+        indent = {
+          tab-width = 4;
+          unit = "    ";
         };
       }];
     };
