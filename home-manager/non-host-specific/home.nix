@@ -43,6 +43,7 @@
     qbittorrent
     runelite
     systemd
+    sqlitebrowser
     tor-browser-bundle-bin
     texstudio
     texliveFull
