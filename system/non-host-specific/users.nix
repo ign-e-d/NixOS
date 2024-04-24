@@ -4,10 +4,12 @@
 
 { config, pkgs, ... }:
 {
+  users.groups.wireshark = {};
+
   users.users.a = {
     isNormalUser = true;
     description = "a";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "wireshark" ];
     packages = with pkgs; [
       glibcLocalesUtf8
     ];
