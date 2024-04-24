@@ -51,7 +51,6 @@
     vlc
     vistafonts #for latex
     wireguard-tools
-    wireshark
     wmctrl
     xclip
     xdotool
