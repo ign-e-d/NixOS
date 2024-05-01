@@ -19,5 +19,7 @@
     settings.PasswordAuthentication = false;
   };
 
+  services.pcscd.enable = true;
+
   services.flatpak.enable = true;
 }
