@@ -10,9 +10,7 @@
     settings = {
       theme = "gruvbox";
       editor = {
-        bufferline = {
-          always = true;
-        };
+        bufferline = "always";
         cursorline = {
           enable = true;
         };
