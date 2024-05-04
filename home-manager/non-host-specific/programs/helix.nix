@@ -11,12 +11,8 @@
       theme = "gruvbox";
       editor = {
         bufferline = "always";
-        cursorline = {
-          enable = true;
-        };
-        mouse = {
-          enable = true;
-        };
+        cursorline = true;
+        mouse = true;
         soft-wrap = {
           enable = true;
         };
@@ -42,6 +38,29 @@
           render = true;
           character = "╎";
           skip-levels = 1;
+        };
+        statusline = {
+          left = [
+            "mode"
+            "spinner"
+          ];
+          center = [
+            "file-name"
+          ];
+          right = [
+            "diagnostics"
+            "selections"
+            "position"
+            "file-encoding"
+            "file-line-ending"
+            "file-type"
+          ];
+          separator = "│";
+          mode = {
+            normal = "NORMAL";
+            insert = "INSERT";
+            select = "SELECT";
+          };
         };
       };
       keys.normal = {
