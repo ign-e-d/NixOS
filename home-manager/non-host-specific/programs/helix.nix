@@ -10,6 +10,18 @@
     settings = {
       theme = "gruvbox";
       editor = {
+        bufferline = {
+          always = true;
+        };
+        cursorline = {
+          enable = true;
+        };
+        mouse = {
+          enable = true;
+        };
+        soft-wrap = {
+          enable = true;
+        };
         file-picker = {
           hidden = false;
         };
