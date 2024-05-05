@@ -8,7 +8,8 @@
     enable = true;
     theme = "Gruvbox Dark";
     font = {
-      name = "DroidSansMonoNerdFontComplete-Regular";
+      # name = "DroidSansMonoNerdFontComplete-Regular";
+      name = "0xProtoNerdFont";
       size = 12;
     };
     settings = {
