@@ -39,6 +39,7 @@
     obsidian
     octaveFull
     polkit
+    pls
     qalculate-gtk
     qbittorrent
     runelite
