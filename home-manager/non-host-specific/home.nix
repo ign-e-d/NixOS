@@ -24,6 +24,7 @@
     clinfo
     corefonts #for latex
     drawio
+    eza
     ffmpeg_5-full
     firefox
     gimp
@@ -39,7 +40,6 @@
     obsidian
     octaveFull
     polkit
-    pls
     qalculate-gtk
     qbittorrent
     runelite
