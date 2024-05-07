@@ -22,6 +22,7 @@
     anki-bin
     audacious
     bat
+    bottom
     clinfo
     corefonts #for latex
     drawio
