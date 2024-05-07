@@ -9,7 +9,8 @@
     theme = "Gruvbox Dark";
     font = {
       # name = "DroidSansMonoNerdFontComplete-Regular";
-      name = "DroidSansMonoNerdFontComplete";
+      # name = "DroidSansMonoNerdFontComplete";
+      name = "DroidSansMNerdFontMono";
       size = 12;
     };
     settings = {
