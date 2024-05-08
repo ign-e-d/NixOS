@@ -104,10 +104,11 @@
         };
       }
       {
+        # TODO look at this https://github.com/helix-editor/helix/discussions/8567
         name = "python";
         formatter = {
-          command = "prettier";
-          args = [ "--parser" "python" ];
+          command = "black";
+          args = [ "-" "--quiet" ];
         };
         indent = {
           tab-width = 4;
