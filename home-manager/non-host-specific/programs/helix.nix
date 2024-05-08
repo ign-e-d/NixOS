@@ -65,6 +65,8 @@
       };
       keys.normal = {
         ins = "insert_mode";
+        C-left = [ "move_prev_word_start" "move_char_left" "move_char_right" ];
+        C-right = [ "move_next_word_start" ];
       };
       keys.insert = {
         S-tab = "unindent";
@@ -73,9 +75,9 @@
         A-k = "move_line_up";
         A-l = "move_char_right";
         A-o = "open_below";
-        A-O = "open_above";
+        A-p = "open_above";
         C-left = [ "move_prev_word_start" "move_char_left" "move_char_right" ];
-        C-right = [ "move_next_word_start" "move_char_left" "move_char_right" ];
+        C-right = [ "move_next_word_start" ];
       };
     };
     languages = {
