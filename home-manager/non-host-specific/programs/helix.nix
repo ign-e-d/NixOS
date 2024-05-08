@@ -68,6 +68,12 @@
       };
       keys.insert = {
         S-tab = "unindent";
+        A-h = "move_char_left";
+        A-j = "move_line_down";
+        A-k = "move_line_up";
+        A-l = "move_char_right";
+        A-o = "open_below";
+        A-O = "open_above";
       };
     };
     languages = {
