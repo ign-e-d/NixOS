@@ -67,6 +67,7 @@
         ins = "insert_mode";
         C-left = [ "move_prev_word_start" "move_char_left" "move_char_right" ];
         C-right = [ "move_next_word_start" "move_char_left" "move_char_right" ];
+        esc = [ "normal_mode" ":format" ":write-all" ];
       };
       keys.insert = {
         S-tab = "unindent";
