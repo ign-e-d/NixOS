@@ -66,7 +66,7 @@
       keys.normal = {
         ins = "insert_mode";
         C-left = [ "move_prev_word_start" "move_char_left" "move_char_right" ];
-        C-right = [ "move_next_word_start" ];
+        C-right = [ "move_next_word_start" "move_char_left" "move_char_right" ];
       };
       keys.insert = {
         S-tab = "unindent";
@@ -77,7 +77,7 @@
         A-o = "open_below";
         A-p = "open_above";
         C-left = [ "move_prev_word_start" "move_char_left" "move_char_right" ];
-        C-right = [ "move_next_word_start" ];
+        C-right = [ "move_next_word_start" "move_char_right" ];
       };
     };
     languages = {
