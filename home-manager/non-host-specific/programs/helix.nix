@@ -105,6 +105,10 @@
       }
       {
         name = "python";
+        formatter = {
+          command = "prettier";
+          args = [ "--parser" "python" ];
+        };
         indent = {
           tab-width = 4;
           unit = "    ";
