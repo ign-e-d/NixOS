@@ -9,7 +9,7 @@
   users.users.a = {
     isNormalUser = true;
     description = "a";
-    extraGroups = [ "networkmanager" "wheel" "wireshark" ];
+    extraGroups = [ "networkmanager" "wheel" "wireshark" "audio" ];
     packages = with pkgs; [
       glibcLocalesUtf8
     ];
