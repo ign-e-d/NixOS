@@ -92,6 +92,10 @@
     languages = {
       language = [{
         name = "cpp";
+        formatter = {
+          command = "clang-format";
+          args = [ "--style=Google" ];
+        };
         indent = {
           tab-width = 4;
           unit = "    ";
