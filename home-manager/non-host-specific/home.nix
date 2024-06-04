@@ -26,6 +26,7 @@
     clinfo
     corefonts #for latex
     drawio
+    discord
     eza
     ffmpeg_5-full
     firefox
