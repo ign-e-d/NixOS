@@ -10,6 +10,7 @@ in
 {
   home.packages = with pkgs; [
     blender
+    godot_4
     
     swww
     hyprshot
