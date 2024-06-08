@@ -49,6 +49,7 @@
     systemd
     sqlitebrowser
     tor-browser-bundle-bin
+    telegram-desktop
     texstudio
     texliveFull
     unison
