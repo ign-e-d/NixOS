@@ -60,6 +60,7 @@
     xclip
     xdotool
     xlogo
+    ydotool
 
     libreoffice-qt
     hunspell
