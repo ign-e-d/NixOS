@@ -10,7 +10,6 @@
 
   environment.systemPackages = with pkgs; [
     wireshark
-    libratbag
     piper
   ];
 
