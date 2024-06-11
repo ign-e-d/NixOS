@@ -25,6 +25,7 @@
     bottom
     clinfo
     corefonts #for latex
+    dotool
     drawio
     discord
     eza
