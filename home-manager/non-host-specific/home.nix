@@ -43,6 +43,7 @@
     obs-studio
     obsidian
     octaveFull
+    pavucontrol
     polkit
     qalculate-gtk
     qbittorrent
