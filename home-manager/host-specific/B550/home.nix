@@ -18,6 +18,8 @@ in
     libnotify
     networkmanager
 
+    kdePackages.kdenlive
+
     qt5.qtwayland
   ];
 
