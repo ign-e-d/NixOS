@@ -18,7 +18,7 @@ in
     libnotify
     networkmanager
 
-    libsForQt5.kdenlive
+    openshot-qt
 
     qt5.qtwayland
   ];
