@@ -80,6 +80,7 @@
     libsForQt5.kdialog
     libsForQt5.kate
     libsForQt5.filelight
+    libsForQt5.kruler
     krita
   ];
 }
