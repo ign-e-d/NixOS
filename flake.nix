@@ -8,17 +8,19 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     helix.url = "github:helix-editor/helix/master";
-    hyprland.url = "github:hyprwm/Hyprland";
-    hyprlock.url = "github:hyprwm/Hyprlock";
+    stylix.url = "github:danth/stylix";
+    # hyprland.url = "github:hyprwm/Hyprland";
+    # hyprlock.url = "github:hyprwm/Hyprlock";
   };
 
-  outputs = { self, nixpkgs, home-manager, ... } @ inputs: let inherit (self) outputs; in {
+  outputs = { self, nixpkgs, home-manager, stylix, ... } @ inputs: let inherit (self) outputs; in {
     nixosConfigurations = {
       #TODO: change B550 to your hostname
       B550 = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         specialArgs = { inherit inputs outputs; };
         modules = [
+          # stylix.nixosModules.stylix
           #TODO: change B550 to your hostname
           ./system/host-specific/B550
         ];

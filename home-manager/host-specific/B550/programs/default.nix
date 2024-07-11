@@ -4,6 +4,6 @@
     # ./hyprland
     # ./hyprlock
     # ./waybar
-    # ./sddm
+    ./sddm
   ];
 }
