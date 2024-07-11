@@ -2,5 +2,6 @@
 {
   imports = [
     ./sddm
+    ./stylix.nix
   ];
 }

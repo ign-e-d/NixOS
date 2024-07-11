@@ -14,7 +14,6 @@
     ./programs.nix
     ./services.nix
     ./sound.nix
-    # ./stylix.nix
     ./system.nix
     ./systemd.nix
     ./time.nix
