@@ -9,39 +9,32 @@ let
 in
 {
   home.packages = with pkgs; [
-    blender
-    godot_4
-    
-    swww
-    hyprshot
-    dunst
-    libnotify
-    networkmanager
+    # swww  Wallpapers for wayland
+    # hyprshot
+    # dunst
+    # libnotify
+    # networkmanager
 
-    openshot-qt
-
-    qt5.qtwayland
+    # qt5.qtwayland
   ];
 
-  home.pointerCursor = {
-    gtk.enable = true;
-    # x11.enable = true;
-    package = pkgs.bibata-cursors;
-    name = "Bibata-Modern-Classic";
-    size = 16;
-  };
+  # home.pointerCursor = {
+  #   gtk.enable = true;
+  #   package = pkgs.bibata-cursors;
+  #   name = "Bibata-Modern-Classic";
+  #   size = 16;
+  # };
 
+  # qt = {
+  #   enable = true;
+  #   platformTheme = "qtct";
+  # };
 
-  qt = {
-    enable = true;
-    platformTheme = "qtct";
-  };
-
-  gtk = {
-    enable = true;
-    theme = {
-      package = pkgs.adw-gtk3;
-      name = "adw-gtk3";
-    };
-  };
+  # gtk = {
+  #   enable = true;
+  #   theme = {
+  #     package = pkgs.adw-gtk3;
+  #     name = "adw-gtk3";
+  #   };
+  # };
 }

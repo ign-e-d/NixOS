@@ -19,7 +19,7 @@
         system = "x86_64-linux";
         specialArgs = { inherit inputs outputs; };
         modules = [
-          #TODO: change T430s to your hostname
+          #TODO: change B550 to your hostname
           ./system/host-specific/B550
         ];
       };
