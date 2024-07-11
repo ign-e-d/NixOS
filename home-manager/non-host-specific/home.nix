@@ -19,50 +19,61 @@
   home.packages = with pkgs; [
     nix-output-monitor
 
-    anki-bin
     audacious
+
     bat
     bottom
+
     clinfo
     corefonts #for latex
-    dotool
+
     drawio
     discord
+
     eza
+
     ffmpeg_5-full
     firefox
+
     gimp
-    gsmartcontrol
+
     htop
+
     kiwix
+
     linuxKernel.packages.linux_5_4.wireguard
-    libresprite
     lm_sensors
-    mpv
+
+    # mpv
+
     neofetch
+
     obs-studio
-    obsidian
-    octaveFull
+
     pavucontrol
     polkit
+
     qalculate-gtk
     qbittorrent
+
     runelite
+
     systemd
     sqlitebrowser
+
     tor-browser-bundle-bin
     telegram-desktop
     texstudio
     texliveFull
-    unison
+
     vlc
     vistafonts #for latex
+
     wireguard-tools
     wmctrl
+
     xclip
     xdotool
-    xlogo
-    ydotool
 
     libreoffice-qt
     hunspell
@@ -74,7 +85,6 @@
     steamcmd
     steam-run
 
-    libsForQt5.yakuake
     libsForQt5.ark
     libsForQt5.kdeconnect-kde
     libsForQt5.kdialog

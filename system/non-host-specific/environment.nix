@@ -4,13 +4,8 @@
 
 { config, pkgs, ... }:
 {
-  environment.plasma6.excludePackages = with pkgs.kdePackages; [
-    elisa
-  ];
-
   environment.systemPackages = with pkgs; [
     wireshark
-    piper
   ];
 
   security.wrappers = {

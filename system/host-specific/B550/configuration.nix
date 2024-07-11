@@ -15,7 +15,6 @@
     users.a = {
       imports = [
         ../../../home-manager/host-specific/B550
-        inputs.hyprlock.homeManagerModules.hyprlock
       ];
     };
   };

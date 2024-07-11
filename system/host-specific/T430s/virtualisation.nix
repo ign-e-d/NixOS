@@ -1,5 +1,5 @@
 #
-# This file is intended for non-host-specific settings.
+# This file is intended for host-specific settings.
 #
 
 { config, pkgs, ... }:
