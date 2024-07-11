@@ -3,6 +3,14 @@
 #
 
 { config, pkgs, inputs, ... }:
+let
+  stylix = pkgs.fetchFromGitHub {
+      owner = "danth";
+      repo = "stylix";
+      rev = "...";
+      sha256 = "...";
+  };
+in
 {
 
 }
