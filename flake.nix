@@ -11,7 +11,7 @@
     stylix.url = "github:danth/stylix";
   };
 
-  outputs = { self, nixpkgs, home-manager, ... } @ inputs: let inherit (self) outputs; in {
+  outputs = { self, nixpkgs, home-manager, stylix, ... } @ inputs: let inherit (self) outputs; in {
     nixosConfigurations = {
       #TODO: change B550 to your hostname
       B550 = nixpkgs.lib.nixosSystem {
