@@ -10,12 +10,12 @@
       inputs.home-manager.nixosModules.home-manager
     ];
 
-  home-manager = {
-    extraSpecialArgs = { inherit inputs outputs; };
-    users.a = {
-      imports = [
-        ../../../home-manager/host-specific/B550
-      ];
-    };
-  };
+  # home-manager = {
+  #   extraSpecialArgs = { inherit inputs outputs; };
+  #   users.a = {
+  #     imports = [
+  #       ../../../home-manager/host-specific/B550
+  #     ];
+  #   };
+  # };
 }
