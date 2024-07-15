@@ -4,9 +4,9 @@
 
 { config, pkgs, ... }:
 {
-    #1 stylix.enable = true;
+    stylix.enable = true;
 
-    #1 stylix.autoEnable = false;
+    stylix.autoEnable = false;
 
-    #1 stylix.image = /home/a/NixOS/pictures/screenlock.png;
+    stylix.image = /home/a/NixOS/pictures/screenlock.png;
 }
