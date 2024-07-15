@@ -8,8 +8,12 @@
 
     stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
 
-    #stylix.cursor.package = pkgs.bibata-cursors;
-    #stylix.cursor.name = "Bibata-Modern-Classic";
+    stylix.fonts = {
+      monospace = {
+        package = pkgs.nerdfonts.override {fonts = [ "DroidSansMono" ]; };
+        name = "DroidSansMNerdFontMono";
+      };
+    };
 
     stylix.targets.grub.useImage = true;
 
