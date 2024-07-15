@@ -8,5 +8,5 @@
 
     #stylix.autoEnable = false;
 
-    stylix.image = /home/a/NixOS/pictures/screenlock.png;
+    stylix.image = /home/a/NixOS/pictures/wallpaper.jpg;
 }
