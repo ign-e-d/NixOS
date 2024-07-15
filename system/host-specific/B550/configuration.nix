@@ -15,7 +15,7 @@
     users.a = {
       imports = [
         ../../../home-manager/host-specific/B550
-        # inputs.stylix.homeManagerModules.stylix
+        inputs.stylix.homeManagerModules.stylix
       ];
     };
   };
