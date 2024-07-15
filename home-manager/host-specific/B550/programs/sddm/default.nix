@@ -1,6 +1,6 @@
 { config, pkgs, inputs, ... }:
 {
   imports = [
-    ./sddm.nix
+    # ./sddm.nix
   ];
 }

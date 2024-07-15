@@ -18,6 +18,7 @@ echo "-----------------------------------------------------------"
 
 # Add all files for the correct rebuilding
 git -C $config_folder add -A
+git -C $config_folder status
 
 echo ""
 echo "0. Execute sudo nix flake update $config_folder/"
