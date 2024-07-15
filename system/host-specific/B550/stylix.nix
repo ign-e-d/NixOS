@@ -6,7 +6,7 @@
 {
     stylix.enable = true;
 
-    stylix.autoEnable = false;
+    #stylix.autoEnable = false;
 
     stylix.image = /home/a/NixOS/pictures/screenlock.png;
 }

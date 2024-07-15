@@ -13,6 +13,7 @@
 
   home-manager = {
     extraSpecialArgs = { inherit inputs outputs; };
+    backupFileExtension = "backup";
     users.a = {
       imports = [
         ../../../home-manager/host-specific/B550
