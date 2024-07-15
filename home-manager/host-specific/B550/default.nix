@@ -3,7 +3,6 @@
   imports = [
     ../../non-host-specific
 
-    ./programs
     ./home.nix
   ];
 }
