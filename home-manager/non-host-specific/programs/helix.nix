@@ -8,7 +8,7 @@
     enable = true;
     package = inputs.helix.packages."${pkgs.system}".helix;
     settings = {
-      #theme = "gruvbox";
+      theme = "gruvbox";
       editor = {
         bufferline = "always";
         cursorline = true;
