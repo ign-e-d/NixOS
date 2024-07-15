@@ -7,8 +7,8 @@ let
   configRepo = pkgs.fetchFromGitHub {
     owner = "ign-e-d";
     repo = "NixOS";
-    rev = "5fa8918fdfedb3cde6313c823d0f4e13060b02f7";
-    sha256 = "0ll0dczhl3gfdy3fni0vw7k60ak12lagm72jhwxb0k2jpmn24p63";
+    rev = "2414286217c0f8822c3f5f70366a98d479ebdcae";
+    sha256 = "11yi4bqnrhdvbjm0yzpnrr7jn84n2aj7nzm9d8bhwzs55ps6ppwa"; # use nix-shell -p nix-prefetch-git https://github.com/ign-e-d/NixOS
   };
 in
 pkgs.stdenv.mkDerivation {
@@ -22,7 +22,7 @@ pkgs.stdenv.mkDerivation {
   installPhase = ''
     mkdir -p $out
     cp -R ./src/catppuccin-latte/* $out/
-    cp -r ${configRepo}/pictures/screenlock.png $out/backgrounds/wall.jpg
+    cp -r ${configRepo}/pictures/wallpaper2.jpg $out/backgrounds/wall.jpg
     cd $out/
     rm theme.conf
     cp -r ${configRepo}/misc/theme.conf $out/
