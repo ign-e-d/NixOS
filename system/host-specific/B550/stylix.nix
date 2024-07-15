@@ -6,7 +6,7 @@
 {
     stylix.enable = true;
 
-    #stylix.autoEnable = false;
+    stylix.polarity = "dark";
 
     stylix.image = /home/a/NixOS/pictures/wallpaper.jpg;
 }
