@@ -9,7 +9,7 @@
     stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
 
     stylix.cursor.package = pkgs.bibata-cursors;
-    stylix.cursor.name = "Bibata-Modern-Ice";
+    stylix.cursor.name = "Bibata-Modern-Classic";
 
     stylix.image = /home/a/NixOS/pictures/wallpaper.jpg;
 }
