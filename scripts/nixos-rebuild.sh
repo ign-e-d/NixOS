@@ -10,7 +10,7 @@ figlet "#$HOSTNAME"
 
 echo "-----------------------------------------------------------"
 echo "This simple script will do several things:"
-# echo "0. Execute sudo nix flake update $config_folder/"
+echo "0. Execute sudo nix flake update $config_folder/"
 echo "1. Execute sudo nixos-generate-config --show-hardware-config > $config_folder/system/host-specific/$HOSTNAME/hardware-configuration.nix"
 echo "2. Execute sudo nixos-rebuild switch --flake $config_folder#$HOSTNAME"
 echo "3. Commit changes in configuration and push to repository"
@@ -19,9 +19,9 @@ echo "-----------------------------------------------------------"
 # Add all files for the correct rebuilding
 git -C $config_folder add -A
 
-# echo ""
-# echo "0. Execute sudo nix flake update $config_folder/"
-# sudo nix flake update $config_folder/
+echo ""
+echo "0. Execute sudo nix flake update $config_folder/"
+sudo nix flake update $config_folder/
 
 echo ""
 echo "1. Execute sudo nixos-generate-config --show-hardware-config > $config_folder/system/host-specific/$HOSTNAME/hardware-configuration.nix"
