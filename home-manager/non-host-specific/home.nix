@@ -33,7 +33,7 @@
     eza
 
     ffmpeg_5-full
-    firefox-bin
+    firefox-beta
 
     gimp
 
