@@ -6,6 +6,9 @@
 {
   stylix.targets.kitty.enable = false;
   stylix.targets.helix.enable = false;
+
+  stylix.cursor.package = pkgs.bibata-cursors;
+  stylix.cursor.name = "Bibata-Modern-Classic";
 }
 
 
