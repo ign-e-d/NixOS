@@ -23,7 +23,7 @@
         system = "x86_64-linux";
         specialArgs = { inherit inputs outputs; };
         modules = [
-          # inputs.stylix.nixosModules.stylix
+          inputs.stylix.nixosModules.stylix
           ./system/host-specific/B550
         ];
       };
