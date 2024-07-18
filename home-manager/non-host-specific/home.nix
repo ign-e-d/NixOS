@@ -35,6 +35,7 @@
     ffmpeg_5-full
     firefox-beta
 
+    gamescope
     gimp
 
     htop
