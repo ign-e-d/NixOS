@@ -5,5 +5,6 @@
     ./git.nix
     ./kitty.nix
     ./stylix.nix
+    ./zsh.nix
   ];
 }
