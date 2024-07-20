@@ -21,8 +21,11 @@ git -C $config_folder add -A
 git -C $config_folder status
 
 echo ""
-echo "0. Execute sudo nix flake update $config_folder/"
-sudo nix flake update $config_folder/
+read -r -p "0. Do you want to execute sudo nix flake update $config_folder/ ? [y/N] " response
+if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]
+then
+  sudo nix flake update $config_folder/
+fi
 
 echo ""
 echo "1. Execute sudo nixos-generate-config --show-hardware-config > $config_folder/system/host-specific/$HOSTNAME/hardware-configuration.nix"
