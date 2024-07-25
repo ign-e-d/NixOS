@@ -26,6 +26,7 @@
 
     clinfo
     corefonts #for latex
+    chromium
 
     drawio
     discord
