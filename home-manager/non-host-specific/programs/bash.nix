@@ -5,6 +5,7 @@
 { config, pkgs, inputs, ... }:
 {
   programs.bash = {
+    enable = true;
     bashrcExtra = ''
       function lk {
         cd "$(walk "$@")"
