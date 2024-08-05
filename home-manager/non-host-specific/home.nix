@@ -71,6 +71,7 @@
     vlc
     vistafonts #for latex
 
+    walk
     wireguard-tools
     wmctrl
 
