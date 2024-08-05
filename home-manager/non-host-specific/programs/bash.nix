@@ -7,8 +7,10 @@
   programs.bash = {
     enable = true;
     bashrcExtra = ''
+      export WALK_EDITOR=hx
+
       function lk {
-        cd "$(walk "$@")"
+        cd "$(walk --icons --fuzzy "$@")"
       }
     '';
   };

@@ -33,7 +33,7 @@
 
     eza
 
-    ffmpeg_5-full
+    ffmpeg_7-full
     firefox-beta
 
     gamescope
