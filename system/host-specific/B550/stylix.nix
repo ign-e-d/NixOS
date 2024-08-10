@@ -8,12 +8,12 @@
 
     stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
 
-    stylix.fonts = {
-      monospace = {
-        package = pkgs.nerdfonts.override {fonts = [ "DroidSansMono" ]; };
-        name = "DroidSansMNerdFontMono";
-      };
-    };
+    # stylix.fonts = {
+    #   monospace = {
+    #     package = pkgs.nerdfonts.override {fonts = [ "DroidSansMono" ]; };
+    #     name = "DroidSansMNerdFontMono";
+    #   };
+    # };
 
     stylix.targets.grub.useImage = true;
 

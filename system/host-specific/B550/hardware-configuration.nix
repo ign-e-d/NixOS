@@ -24,6 +24,11 @@
       options = [ "fmask=0022" "dmask=0022" ];
     };
 
+  fileSystems."/root/.cache/doc" =
+    { device = "portal";
+      fsType = "fuse.portal";
+    };
+
   swapDevices = [ ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
