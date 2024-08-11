@@ -4,8 +4,8 @@
 
 { config, pkgs, ... }:
 {
-  i18n.extraLocaleSettings = {
-    LC_ALL = "en_GB.UTF-8";
-  };
+  #i18n.extraLocaleSettings = {
+  #  LC_ALL = "en_GB.UTF-8";
+  #};
 }
 
