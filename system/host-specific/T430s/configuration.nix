@@ -8,13 +8,14 @@
     [
       ./hardware-configuration.nix
       inputs.home-manager.nixosModules.home-manager
+      inputs.stylix.nixosModules.stylix
     ];
 
   home-manager = {
     extraSpecialArgs = { inherit inputs outputs; };
     users.a = {
       imports = [
-        ../../../home-manager/host-specific/T430s;
+        ../../../home-manager/host-specific/T430s
       ];
     };
   };
