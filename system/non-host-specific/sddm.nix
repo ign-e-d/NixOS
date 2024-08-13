@@ -1,5 +1,5 @@
 #
-# This file is intended for host-specific settings.
+# This file is intended for non-host-specific settings.
 #
 
 { pkgs }:
@@ -28,3 +28,4 @@ name = "sddm-catppuccin";
     cp -r ${configRepo}/misc/theme.conf $out/
    '';
 }
+

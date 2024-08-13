@@ -20,4 +20,6 @@
   };
 
   services.flatpak.enable = true;
+
+  services.xserver.displayManager.sddm.theme = "${import ./sddm.nix { inherit pkgs; }}";
 }
