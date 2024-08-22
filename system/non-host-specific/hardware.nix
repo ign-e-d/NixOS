@@ -6,10 +6,10 @@
 {
   hardware.bluetooth.enable = true;
 
-  hardware.opengl.enable = true;
+  hardware.graphics.enable = true;
   # hardware.opengl.driSupport = true; no longer has any effect
-  hardware.opengl.driSupport32Bit = true;
-  hardware.opengl.extraPackages = with pkgs; [
+  hardware.graphics.driSupport32Bit = true;
+  hardware.graphics.extraPackages = with pkgs; [
     rocm-opencl-icd
     rocm-opencl-runtime
   ];

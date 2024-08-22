@@ -22,6 +22,7 @@
     audacious
 
     bat
+    broot
     bottom
 
     clinfo

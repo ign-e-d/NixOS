@@ -5,7 +5,6 @@
 { config, pkgs, ... }:
 {
   services.xserver.enable = true;
-  services.xserver.displayManager.sddm.enable = true;
   services.xserver.desktopManager.plasma5.enable = true;
   services.xserver = {
     xkb.layout = "us";
@@ -21,5 +20,6 @@
 
   services.flatpak.enable = true;
 
-  services.xserver.displayManager.sddm.theme = "${import ./sddm.nix { inherit pkgs; }}";
+  services.displayManager.sddm.enable = true;
+  services.displayManager.sddm.theme = "${import ./sddm.nix { inherit pkgs; }}";
 }

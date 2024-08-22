@@ -8,4 +8,8 @@
     enable = true;
     enableSSHSupport = true;
   };
+
+  programs.nh = {
+    enable = true;
+  };
 }

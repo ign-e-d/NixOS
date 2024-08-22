@@ -7,7 +7,7 @@
   services.xserver.videoDrivers = [ "amdgpu" ];
 
   # Hyprland
-  services.xserver.displayManager.sddm.wayland.enable = true;
+  services.displayManager.sddm.wayland.enable = true;
 
   # services.xserver.displayManager.sddm.theme = "${import ./sddm.nix { inherit pkgs; }}";
 }
