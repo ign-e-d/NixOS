@@ -1,5 +1,5 @@
 #! /usr/bin/env nix-shell
-#! nix-shell -i bash git figlet -p bash git figlet
+#! nix-shell -i bash git figlet -p bash git figlet nh
 
 set -e
 
@@ -33,7 +33,8 @@ sudo nixos-generate-config --show-hardware-config > $config_folder/system/host-s
 
 echo ""
 echo "2. Execute sudo nixos-rebuild switch --flake $config_folder#$HOSTNAME"
-sudo nixos-rebuild --verbose switch --flake $config_folder#$HOSTNAME
+# sudo nixos-rebuild --verbose switch --flake $config_folder#$HOSTNAME
+nh os switch -a $config_folder
 
 echo ""
 echo "3. Commit changes in configuration and push to repository"
