@@ -36,6 +36,7 @@
 
     ffmpeg_7-full
     firefox-beta
+    fselect
 
     gamescope
     gimp

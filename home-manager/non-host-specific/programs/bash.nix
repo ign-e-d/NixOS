@@ -59,6 +59,10 @@
               return "$code"
           fi
       }
+
+      function ez {
+        eza --icons -G -a
+      }
     '';
   };
 }
