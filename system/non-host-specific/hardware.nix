@@ -8,7 +8,7 @@
 
   hardware.graphics.enable = true;
   # hardware.opengl.driSupport = true; no longer has any effect
-  hardware.graphics.driSupport32Bit = true;
+  hardware.graphics.enable32Bit = true;
   hardware.graphics.extraPackages = with pkgs; [
     rocm-opencl-icd
     rocm-opencl-runtime
