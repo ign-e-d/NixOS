@@ -68,6 +68,7 @@
     telegram-desktop
     texstudio
     texliveFull
+    twitch-tui
 
     vlc
     vistafonts #for latex
