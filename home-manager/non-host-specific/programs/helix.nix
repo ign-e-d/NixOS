@@ -7,6 +7,16 @@
   programs.helix = {
     enable = true;
     package = inputs.helix.packages."${pkgs.system}".helix;
+    extraPackages = [
+      pkgs.nodePackages.prettier
+      pkgs.nodePackages.typescript-language-server
+      pkgs.black
+      pkgs.texlab
+      pkgs.marksman
+      pkgs.python312Packages.python-lsp-server
+      pkgs.nil
+      pkgs.nixfmt-rfc-style
+    ];
     settings = {
       theme = "gruvbox";
       editor = {
@@ -115,6 +125,9 @@
       }
       {
         name = "nix";
+        formatter = {
+          command = "nixfmt";
+        };
         indent = {
           tab-width = 2;
           unit = "  ";
