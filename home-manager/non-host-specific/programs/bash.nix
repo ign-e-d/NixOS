@@ -2,7 +2,12 @@
 # This file is intended for non-host-specific home-manager settings.
 #
 
-{ config, pkgs, inputs, ... }:
+{
+  config,
+  pkgs,
+  inputs,
+  ...
+}:
 {
   programs.bash = {
     enable = true;
@@ -32,7 +37,7 @@
       # Show auto-completion list automatically, without double tab
       if [[ $iatest > 0 ]]; then bind "set show-all-if-ambiguous On"; fi
 
-      
+
       export EDITOR=hx
       export WALK_EDITOR=hx
 
@@ -61,7 +66,7 @@
       }
 
       function ez {
-        eza --icons -G -a
+        eza --icons -1 -a
       }
     '';
   };
