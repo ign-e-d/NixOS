@@ -13,6 +13,7 @@
     enable = true;
     package = inputs.helix.packages."${pkgs.system}".helix;
     extraPackages = [
+      pkgs.rustfmt
       pkgs.nodePackages.prettier
       pkgs.nodePackages.typescript-language-server
       pkgs.black
@@ -146,6 +147,17 @@
     };
     languages = {
       language = [
+        {
+          name = "rust";
+          formatter = {
+            command = "rustfmt";
+            args = [ "-" ];
+          };
+          indent = {
+            tab-width = 4;
+            unit = "    ";
+          };
+        }
         {
           name = "cpp";
           formatter = {
