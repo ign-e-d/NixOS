@@ -152,7 +152,6 @@
           name = "rust";
           formatter = {
             command = "rustfmt";
-            args = [ "-" ];
           };
           indent = {
             tab-width = 4;
