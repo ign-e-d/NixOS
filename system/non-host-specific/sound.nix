@@ -15,6 +15,6 @@
   #   pulse.enable = true;
   # };
 
-  hardware.pulseaudio.enable = true;
-  hardware.pulseaudio.support32Bit = true;
+  hardware.pulseaudio.enable = false; # [note] true;
+  hardware.pulseaudio.support32Bit = false; # [note] true;
 }

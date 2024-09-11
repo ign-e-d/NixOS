@@ -13,9 +13,9 @@
     enable = true;
     package = inputs.helix.packages."${pkgs.system}".helix;
     extraPackages = [
-      # pkgs.rust-analyzer
-      # pkgs.rustfmt
-      pkgs.rustup
+      pkgs.rust-analyzer
+      pkgs.rustfmt
+      pkgs.rustup # maybe remove. dont know
       pkgs.nodePackages.prettier
       pkgs.nodePackages.typescript-language-server
       pkgs.black
