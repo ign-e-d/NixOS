@@ -5,7 +5,6 @@
 { config, pkgs, ... }:
 {
   # sound.enable = true;
-  # hardware.pulseaudio.enable = false;
 
   # security.rtkit.enable = true;
   # services.pipewire = {
@@ -15,6 +14,10 @@
   #   pulse.enable = true;
   # };
 
-  hardware.pulseaudio.enable = false; # [note] true;
-  hardware.pulseaudio.support32Bit = false; # [note] true;
+  services.pipewire = {
+    enable = false;
+  };
+
+  hardware.pulseaudio.enable = true;
+  hardware.pulseaudio.support32Bit = true;
 }
