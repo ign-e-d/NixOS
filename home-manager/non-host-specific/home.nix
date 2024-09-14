@@ -2,7 +2,12 @@
 # This file is intended for non-host-specific home-manager settings.
 #
 
-{ config, pkgs, inputs, ... }:
+{
+  config,
+  pkgs,
+  inputs,
+  ...
+}:
 {
   home.username = "a";
   home.homeDirectory = "/home/a";
@@ -26,7 +31,7 @@
     bottom
 
     clinfo
-    corefonts #for latex
+    corefonts # for latex
     chromium
 
     drawio
@@ -72,7 +77,7 @@
     twitch-tui
 
     vlc
-    vistafonts #for latex
+    vistafonts # for latex
 
     walk
     wireguard-tools
@@ -98,5 +103,8 @@
     libsForQt5.filelight
     libsForQt5.kruler
     krita
+
+    libratbag # for mouse
+    piper
   ];
 }
