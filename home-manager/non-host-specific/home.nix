@@ -104,7 +104,6 @@
     libsForQt5.kruler
     krita
 
-    libratbag # for mouse
     piper
   ];
 }

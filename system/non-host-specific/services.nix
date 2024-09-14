@@ -22,4 +22,6 @@
 
   services.displayManager.sddm.enable = true;
   services.displayManager.sddm.theme = "${import ./sddm.nix { inherit pkgs; }}";
+
+  services.ratbagd.enable = true; # for piper
 }
