@@ -35,7 +35,7 @@
         end-of-line-diagnostics = "hint";
         inline-diagnostics = {
           cursor-line = "disable";
-          other-line = "disable";
+          other-lines = "disable";
           prefix-len = 3;
         };
         lsp = {
