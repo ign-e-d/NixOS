@@ -32,6 +32,7 @@
         bufferline = "always";
         cursorline = true;
         mouse = true;
+        inline-diagnostics = true;
         lsp = {
           display-messages = true;
           display-inlay-hints = true;
