@@ -34,7 +34,9 @@
         mouse = true;
         end-of-line-diagnostics = "hint";
         inline-diagnostics = {
-          cursor-line = "warning";
+          cursor-line = "disable";
+          other-line = "disable";
+          prefix-len = 3;
         };
         lsp = {
           display-messages = true;
