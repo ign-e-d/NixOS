@@ -32,7 +32,10 @@
         bufferline = "always";
         cursorline = true;
         mouse = true;
-        inline-diagnostics = true;
+        end-of-line-diagnostics = "hint";
+        inline-diagnostics = {
+          cursor-line = "warning";
+        };
         lsp = {
           display-messages = true;
           display-inlay-hints = true;
