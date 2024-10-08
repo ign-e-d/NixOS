@@ -78,6 +78,7 @@
 
     vlc
     vistafonts # for latex
+    vesktop
 
     walk
     wireguard-tools
