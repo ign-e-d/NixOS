@@ -37,7 +37,6 @@
       # Show auto-completion list automatically, without double tab
       if [[ $iatest > 0 ]]; then bind "set show-all-if-ambiguous On"; fi
 
-
       export EDITOR=hx
       export WALK_EDITOR=hx
 
@@ -67,6 +66,11 @@
 
       function ez {
         eza --icons -1 -a
+      }
+
+      # Nix-search. All nixos packages by fzf with caching
+      function ns {
+        nix search nixpkgs --json | nix run nixpkgs#jq -- -r '. | keys[]' | cut -d \. -f 3- | nix run nixpkgs#fzf
       }
     '';
   };
