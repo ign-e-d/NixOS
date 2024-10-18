@@ -6,4 +6,3 @@
 {
   networking.hostName = "B550";
 }
-

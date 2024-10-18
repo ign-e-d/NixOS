@@ -70,7 +70,7 @@
 
       # Nix-search. All nixos packages by fzf with caching
       function ns {
-        nix search nixpkgs --json | nix run nixpkgs#jq -- -r '. | keys[]' | cut -d \. -f 3- | nix run nixpkgs#fzf
+        nix search nixpkgs ^ --json | nix run nixpkgs#jq -- -r '. | keys[]' | cut -d \. -f 3- | nix run nixpkgs#fzf
       }
     '';
   };
