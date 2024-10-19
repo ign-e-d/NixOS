@@ -76,6 +76,7 @@
     texliveFull
     twitch-tui
 
+    v2raya
     vlc
     vistafonts # for latex
     vesktop
