@@ -27,5 +27,6 @@
   ];
 
   boot.initrd.kernelModules = [ "amdgpu" ];
-  boot.kernelPackages = pkgs.linuxPackagesFor pkgs.linux_latest;
+  # boot.kernelPackages = pkgs.linuxPackagesFor pkgs.linux_latest;
+  boot.kernelPackages = pkgs.linuxPackagesFor pkgs.linux_xanmod_latest;
 }

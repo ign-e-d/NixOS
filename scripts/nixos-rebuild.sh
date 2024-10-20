@@ -15,7 +15,8 @@ echo ""
 read -r -p "sudo nix flake update $config_folder/ ? [y/N] " response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]
 then
-  sudo nix flake update $config_folder/
+  echo $config_folder/
+  sudo nix flake update --flake $config_folder/
 fi
 
 echo ""
