@@ -93,6 +93,10 @@
       keys.normal = {
         ins = "insert_mode";
 
+        r = [
+          "move_prev_word_end"
+        ];
+
         C-j = [
           "extend_to_line_bounds"
           "delete_selection"
@@ -119,6 +123,7 @@
           "normal_mode"
           ":format"
           ":write-all"
+          ":reload-all"
         ];
       };
       keys.insert = {

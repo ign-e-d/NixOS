@@ -4,6 +4,11 @@
 
 { config, pkgs, ... }:
 {
+  environment.variables = {
+    LANG = "en_US.UTF-8";
+    LC_ALL = "en_US.UTF-8";
+  };
+
   environment.systemPackages = with pkgs; [
     wireshark
   ];

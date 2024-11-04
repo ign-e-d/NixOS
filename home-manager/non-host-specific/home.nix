@@ -21,6 +21,18 @@
 
   programs.home-manager.enable = true;
 
+  # todo remove
+  programs.vscode = {
+    enable = true;
+
+    extensions = (
+      with pkgs.vscode-extensions;
+      [
+        rust-lang.rust-analyzer
+      ]
+    );
+  };
+
   home.packages = with pkgs; [
     nix-output-monitor
 
