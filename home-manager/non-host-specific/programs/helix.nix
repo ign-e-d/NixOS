@@ -123,7 +123,6 @@
           "normal_mode"
           ":format"
           ":write-all"
-          ":reload-all"
         ];
       };
       keys.insert = {
