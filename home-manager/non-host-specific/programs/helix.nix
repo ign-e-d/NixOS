@@ -168,7 +168,7 @@
             tab-width = 4;
             unit = "    ";
           };
-          diagnostic-severity = "Hint";
+          diagnostic-severity = "hint";
         }
         {
           name = "cpp";
