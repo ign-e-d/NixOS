@@ -35,12 +35,12 @@
         end-of-line-diagnostics = "hint";
         inline-diagnostics = {
           cursor-line = "warning";
-          other-lines = "warning";
-          prefix-len = 3;
+          # other-lines = "warning";
+          # prefix-len = 3;
         };
         lsp = {
           display-messages = true;
-          display-inlay-hints = false;
+          display-inlay-hints = true;
         };
         soft-wrap = {
           enable = true;
