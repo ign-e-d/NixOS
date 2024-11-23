@@ -32,12 +32,12 @@
         bufferline = "always";
         cursorline = true;
         mouse = true;
-        end-of-line-diagnostics = "hint";
-        inline-diagnostics = {
-          cursor-line = "warning";
-          # other-lines = "warning";
-          # prefix-len = 3;
-        };
+        # end-of-line-diagnostics = "hint";
+        # inline-diagnostics = {
+        #   # cursor-line = "warning";
+        #   # other-lines = "warning";
+        #   # prefix-len = 3;
+        # };
         lsp = {
           display-messages = true;
           display-inlay-hints = true;
