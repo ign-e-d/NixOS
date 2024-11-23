@@ -40,7 +40,7 @@
         };
         lsp = {
           display-messages = true;
-          display-inlay-hints = true;
+          display-inlay-hints = false;
         };
         soft-wrap = {
           enable = true;
