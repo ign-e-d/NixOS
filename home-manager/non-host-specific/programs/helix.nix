@@ -32,6 +32,7 @@
         bufferline = "always";
         cursorline = true;
         mouse = true;
+        smart-case = false;
         # end-of-line-diagnostics = "hint";
         # inline-diagnostics = {
         #   # cursor-line = "warning";
