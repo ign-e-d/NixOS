@@ -20,7 +20,6 @@
     extraSpecialArgs = {
       inherit inputs outputs;
     };
-    backupFileExtension = "testbackup"; # change if fails on rebuild
     users.a = {
       imports = [
         # ../../../home-manager/host-specific/B550

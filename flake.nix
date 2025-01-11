@@ -17,23 +17,27 @@
     helix.url = "github:helix-editor/helix/master";
   };
 
-  outputs = { self, nixpkgs, ... } @ inputs: let inherit (self) outputs; in {
-    nixosConfigurations = {
-      B550 = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        specialArgs = { inherit inputs outputs; };
-        modules = [
-          #1 inputs.stylix.nixosModules.stylix
-          ./system/host-specific/B550
-        ];
-      };
-      T430s = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        specialArgs = { inherit inputs outputs; };
-        modules = [
-          ./system/host-specific/T430s
-        ];
+  outputs =
+    { self, nixpkgs, ... }@inputs:
+    let
+      inherit (self) outputs;
+    in
+    {
+      nixosConfigurations = {
+        B550 = nixpkgs.lib.nixosSystem {
+          system = "x86_64-linux";
+          specialArgs = { inherit inputs outputs; };
+          modules = [
+            ./system/host-specific/B550
+          ];
+        };
+        T430s = nixpkgs.lib.nixosSystem {
+          system = "x86_64-linux";
+          specialArgs = { inherit inputs outputs; };
+          modules = [
+            ./system/host-specific/T430s
+          ];
+        };
       };
     };
-  };
 }
