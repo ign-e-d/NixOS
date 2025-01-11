@@ -9,6 +9,10 @@
     LC_ALL = "en_US.UTF-8";
   };
 
+  environment.plasma5.excludePackages = with pkgs.libsForQt5; [
+    elisa
+  ];
+
   environment.systemPackages = with pkgs; [
     wireshark
   ];
