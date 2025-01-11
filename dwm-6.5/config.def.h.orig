@@ -5,7 +5,7 @@
 	1. https://dwm.suckless.org/patches/movestack/
 	2. https://dwm.suckless.org/patches/resizehere/
 	3. https://dwm.suckless.org/patches/statusallmons/
-	4. https://dwm.suckless.org/patches/cool_autostart/dwm-cool-autostart-20240312-9f88553.diff
+	4. https://dwm.suckless.org/patches/alwayscenter/
 */
 
 /* appearance */
@@ -24,11 +24,6 @@ static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
 	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
-};
-
-static const char *const autostart[] = {
-	"kitty", NULL,
-	NULL /* terminate */
 };
 
 /* tagging */
