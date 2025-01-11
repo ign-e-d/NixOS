@@ -27,7 +27,7 @@ static const char *colors[][3]      = {
 };
 
 static const char *const autostart[] = {
-	// "xrandr", "--output", "HDMI-A-0", "--mode", "1920x1080", "--rate", "75", NULL,
+	"xrandr", "--output", "HDMI-A-0", "--mode", "1920x1080", "--rate", "75", NULL,
 	"hsetroot", "-fill", "/home/a/NixOS/pictures/ARR02.png", NULL,
 	NULL /* terminate */
 };
