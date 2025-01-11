@@ -60,6 +60,7 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "kitty", NULL };
 static const char *rebuildcmd[] = { "kitty", "--hold", "bash", "/home/a/NixOS/scripts/error-wrap.sh", NULL };
+static const char *v2rayAcmd[] = { "kitty", "sudo", "v2rayA", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -97,6 +98,7 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 	{ MODKEY,                       XK_r,      spawn,          {.v = rebuildcmd } },
+	{ MODKEY,                       XK_v,      spawn,          {.v = v2rayAcmd } },
 };
 
 /* button definitions */
