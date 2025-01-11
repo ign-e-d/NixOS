@@ -13,6 +13,9 @@
     enable = true;
     enableCompletion = true;
     bashrcExtra = ''
+      # Change keyboard layout
+      setxkbmap -option grp:ctrl_shift_toggle us,ru
+
       # Expand the history size
       export HISTFILESIZE=10000
       export HISTSIZE=500

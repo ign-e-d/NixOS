@@ -3,6 +3,7 @@
 /* patches */
 /*
 	1. https://dwm.suckless.org/patches/movestack/
+	2. https://dwm.suckless.org/patches/resizehere/
 */
 
 /* appearance */
