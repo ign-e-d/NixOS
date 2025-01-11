@@ -18,7 +18,18 @@
   #   ];
   # };
 
+  # TODO move to non-host-specific
   services.xserver.windowManager.dwm.package = pkgs.dwm.overrideAttrs {
     src = ../../../dwm-6.5;
   };
+
+  services.xserver.xrandrHeads = [
+    {
+      output = "HDMI-A-0";
+      primary = true;
+    }
+    {
+      output = "DisplayPort-0";
+    }
+  ];
 }

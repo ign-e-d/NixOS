@@ -4,6 +4,8 @@
 /*
 	1. https://dwm.suckless.org/patches/movestack/
 	2. https://dwm.suckless.org/patches/resizehere/
+	3. https://dwm.suckless.org/patches/statusallmons/
+	4. https://dwm.suckless.org/patches/alwayscenter/
 */
 
 /* appearance */
