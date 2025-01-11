@@ -5,6 +5,6 @@
 { config, pkgs, ... }:
 {
   fonts.packages = with pkgs; [
-    (nerdfonts.override { fonts = [ "DroidSansMono" ]; })
+    nerd-fonts.droid-sans-mono
   ];
 }
