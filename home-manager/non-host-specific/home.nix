@@ -42,12 +42,12 @@
     ffmpeg_7-full
     firefox-beta
     fselect
-    feh
 
     gamescope
     gimp
 
     htop
+    hsetroot
 
     kiwix
 
