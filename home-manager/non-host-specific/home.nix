@@ -47,6 +47,7 @@
     gimp
 
     htop
+    hsetroot
 
     kiwix
 
