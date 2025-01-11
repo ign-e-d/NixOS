@@ -6,8 +6,7 @@
 {
   services.xserver.videoDrivers = [ "amdgpu" ];
 
-  # Hyprland
-  services.displayManager.sddm.wayland.enable = true;
-
-  # services.xserver.displayManager.sddm.theme = "${import ./sddm.nix { inherit pkgs; }}";
+  services.xserver.windowManager.dwm.package = pkgs.dwm.override {
+    conf = ../../../dwm-6.5/config.def.h;
+  };
 }
