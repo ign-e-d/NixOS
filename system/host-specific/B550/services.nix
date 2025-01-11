@@ -12,8 +12,8 @@
     conf = ../../../dwm-6.5/config.def.h;
     # patches = [
     #   (pkgs.fetchpatch {
-    #     url = "https://dwm.suckless.org/patches/movestack/dwm-movestack-20211115-a786211.diff";
-    #     hash = "sha256-nNjaze1dPu0LP6oSy0UtWZpJPuONEyz3/AUaB6QyZZ4=";
+    #     url = "https://dwm.suckless.org/patches/movestack/dwm-movestack-6.1.diff";
+    #     hash = "sha256-PUd+P1WF4Ac5azB6tpYjbPo6XTrsqw/G9Y3mjvhHjmM=";
     #   })
     # ];
   };
