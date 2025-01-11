@@ -13,6 +13,9 @@
     enable = true;
     enableCompletion = true;
     bashrcExtra = ''
+      # Set frame rate
+      xranrd --output HDMI-A-0 --rate 75
+
       # Change keyboard layout
       setxkbmap -option grp:ctrl_shift_toggle us,ru
 
