@@ -20,14 +20,16 @@ static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#005577";
+static const char col_yellow[]      = "#d79921";
 static const char *colors[][3]      = {
-	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+	/*               fg         bg          border   */
+	[SchemeNorm] = { col_gray3, col_gray1,  col_gray2 },
+	[SchemeSel]  = { col_gray4, col_yellow, col_yellow  },
 };
 
 static const char *const autostart[] = {
 	"xrandr", "--output", "HDMI-A-0", "--mode", "1920x1080", "--rate", "75", NULL,
+	"setxkbmap", "-option", "grp:alt_shift_toggle", "us,ru", NULL,
 	"hsetroot", "-fill", "/home/a/NixOS/pictures/ARR02.png", NULL,
 	NULL /* terminate */
 };
@@ -59,7 +61,7 @@ static const Layout layouts[] = {
 };
 
 /* key definitions */
-#define MODKEY Mod1Mask
+#define MODKEY Mod4Mask
 #define TAGKEYS(KEY,TAG) \
 	{ MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
 	{ MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \

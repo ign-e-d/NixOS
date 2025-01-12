@@ -13,11 +13,8 @@
     enable = true;
     enableCompletion = true;
     bashrcExtra = ''
-      # Set frame rate
-      # xrandr --output HDMI-A-0 --mode 1920x1080 --rate 75
-
       # Change keyboard layout
-      setxkbmap -option grp:ctrl_shift_toggle us,ru
+      # setxkbmap -option grp:ctrl_shift_toggle us,ru
 
       # Expand the history size
       export HISTFILESIZE=10000
