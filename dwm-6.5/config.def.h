@@ -17,7 +17,7 @@ static const char *fonts[]          = {
 	"DroidSansMNerdFontMono:size=12",
 	"monospace:size=14"
 };
-static const char dmenufont[]       = "DroidSansMNerdFontMono:size=12";
+static const char dmenufont[]       = "DroidSansMNerdFontMono:size=14";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
