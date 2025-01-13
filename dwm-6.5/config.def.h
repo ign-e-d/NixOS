@@ -82,6 +82,7 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "kitty", NULL };
 static const char *rebuildcmd[] = { "kitty", "--hold", "bash", "/home/a/NixOS/scripts/error-wrap.sh", NULL };
 static const char *v2rayAcmd[] = { "kitty", "sudo", "v2rayA", NULL };
+static const char *slockcmd[] = { "slock", NULL };
 
 #include "movestack.c"
 static const Key keys[] = {
@@ -123,6 +124,7 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 	{ MODKEY,                       XK_r,      spawn,          {.v = rebuildcmd } },
 	{ MODKEY,                       XK_v,      spawn,          {.v = v2rayAcmd } },
+	{ MODKEY,                       XK_s,      spawn,          {.v = slockcmd } },
 };
 
 /* button definitions */
