@@ -32,6 +32,7 @@ static const char *colors[][3]      = {
 };
 
 static const char *const autostart[] = {
+	"dwm-status", "/home/a/NixOS/dwm-status.toml", NULL,
 	"xrandr", "--output", "HDMI-A-0", "--mode", "1920x1080", "--rate", "75", NULL,
 	"setxkbmap", "-option", "grp:alt_shift_toggle", "us,ru", NULL,
 	"hsetroot", "-fill", "/home/a/NixOS/pictures/ARR02.png", NULL,

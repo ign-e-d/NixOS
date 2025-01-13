@@ -1,0 +1,12 @@
+order = ["audio", "time"]
+separator = " / "
+
+[audio]
+control = "Master"
+mute = "MUTE"
+template = "S {VOL}%"
+icons = []
+
+[time]
+format = "%d-%m-%Y %H:%M"
+update_seconds = false
