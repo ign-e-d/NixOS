@@ -1,0 +1,23 @@
+{
+  "debug": false,
+  "order": [],
+  "separator": " / ",
+  "audio": {
+    "control": "Master",
+    "mute": "MUTE",
+    "template": "S {VOL}%",
+    "icons": []
+  },
+  "cpu_load": {
+    "template": "{CL1} {CL5} {CL15}",
+    "update_interval": 20
+  },
+  "network": {
+    "no_value": "NA",
+    "template": "{LocalIPv4} · {ESSID}"
+  },
+  "time": {
+    "format": "%Y-%m-%d %H:%M",
+    "update_seconds": false
+  }
+}
