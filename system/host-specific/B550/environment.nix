@@ -8,7 +8,10 @@
     (dmenu.overrideAttrs (oldAttrs: rec {
       src = ../../../dmenu-5.3;
     }))
-    dwm-status
+    (slstatus.overrideAttrs (oldAttrs: rec {
+      src = ../../../slstatus-1.0;
+    }))
+    # dwm-status
     # (dwmblocks.overrideAttrs (oldAttrs: rec {
     #   src = ../../../dwmblocks;
     # }))
