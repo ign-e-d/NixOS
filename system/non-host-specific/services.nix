@@ -20,8 +20,10 @@
 
   services.flatpak.enable = true;
 
-  services.displayManager.sddm.enable = true;
-  services.displayManager.sddm.theme = "${import ./sddm.nix { inherit pkgs; }}";
+  # services.displayManager.sddm.enable = true;
+  # services.displayManager.sddm.theme = "${import ./sddm.nix { inherit pkgs; }}";
+
+  services.displayManager.ly.enable = true;
 
   services.ratbagd.enable = true; # for piper
 }
