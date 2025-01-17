@@ -40,7 +40,7 @@
     eza
 
     ffmpeg_7-full
-    firefox-beta
+    firefox
     fselect
 
     gamescope
