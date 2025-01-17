@@ -6,9 +6,9 @@
 {
   services.xserver.enable = true;
   services.xserver.desktopManager.plasma5.enable = true;
-  services.xserver = {
-    xkb.layout = "us";
-    xkb.variant = "";
+  services.xserver.xkb = {
+    layout = "us,ru";
+    options = "grp:alt_shift_toggle";
   };
 
   services.printing.enable = true;
@@ -24,6 +24,8 @@
   # services.displayManager.sddm.theme = "${import ./sddm.nix { inherit pkgs; }}";
 
   services.displayManager.ly.enable = true;
+
+  services.picom.enable = true;
 
   services.ratbagd.enable = true; # for piper
 }
