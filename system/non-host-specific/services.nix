@@ -40,5 +40,10 @@
   #   # package = pkgs.picom-pijulius;
   # };
 
+  services.picom = {
+    enable = true;
+    vSync = true;
+  };
+
   services.ratbagd.enable = true; # for piper
 }
