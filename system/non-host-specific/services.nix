@@ -28,14 +28,15 @@
   services.picom = {
     enable = true;
     vSync = true;
-    # shadow = true;
-    # settings = {
-    #   blur = {
-    #     method = "gaussian";
-    #     size = 10;
-    #     deviation = 5.0;
-    #   };
-    # };
+    shadow = false;
+    settings = {
+      # blur = {
+      #   method = "gaussian";
+      #   size = 10;
+      #   deviation = 5.0;
+      # };
+      unredir-if-possible = false;
+    };
     backend = "xrender";
     # package = pkgs.picom-pijulius;
   };
