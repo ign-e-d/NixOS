@@ -25,26 +25,20 @@
 
   services.displayManager.ly.enable = true;
 
-  services.picom = {
-    enable = true;
-    vSync = true;
-    shadow = false;
-    settings = {
-      # blur = {
-      #   method = "gaussian";
-      #   size = 10;
-      #   deviation = 5.0;
-      # };
-      unredir-if-possible = false;
-    };
-    shadowExclude = [
-      "window_type *= 'menu'"
-      "name ~= 'Firefox$'"
-      "focused = 1"
-    ];
-    backend = "xrender";
-    # package = pkgs.picom-pijulius;
-  };
+  # services.picom = {
+  #   enable = true;
+  #   vSync = true;
+  #   # settings = {
+  #   #   unredir-if-possible = false;
+  #   # };
+  #   # shadowExclude = [
+  #   #   "window_type *= 'menu'"
+  #   #   "name ~= 'Firefox$'"
+  #   #   "focused = 1"
+  #   # ];
+  #   backend = "xrender";
+  #   # package = pkgs.picom-pijulius;
+  # };
 
   services.ratbagd.enable = true; # for piper
 }
