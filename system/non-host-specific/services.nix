@@ -37,6 +37,7 @@
       };
     };
     backend = "glx";
+    package = pkgs.picom-pijulius;
   };
 
   services.ratbagd.enable = true; # for piper
