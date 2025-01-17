@@ -44,9 +44,7 @@
     enable = true;
     vSync = true;
     shadowExclude = [
-      "window_type *= 'menu'"
-      "name ~= 'Firefox$'"
-      "focused = 1"
+      "class_g = 'firefox' && argb"
     ];
   };
 
