@@ -28,16 +28,16 @@
   services.picom = {
     enable = true;
     vSync = true;
-    shadow = true;
-    settings = {
-      blur = {
-        method = "gaussian";
-        size = 10;
-        deviation = 5.0;
-      };
-    };
-    backend = "glx";
-    package = pkgs.picom-pijulius;
+    # shadow = true;
+    # settings = {
+    #   blur = {
+    #     method = "gaussian";
+    #     size = 10;
+    #     deviation = 5.0;
+    #   };
+    # };
+    backend = "xrender";
+    # package = pkgs.picom-pijulius;
   };
 
   services.ratbagd.enable = true; # for piper
