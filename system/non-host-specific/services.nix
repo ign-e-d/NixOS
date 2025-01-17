@@ -43,6 +43,11 @@
   services.picom = {
     enable = true;
     vSync = true;
+    shadowExclude = [
+      "window_type *= 'menu'"
+      "name ~= 'Firefox$'"
+      "focused = 1"
+    ];
   };
 
   services.ratbagd.enable = true; # for piper
