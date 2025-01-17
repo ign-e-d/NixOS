@@ -25,7 +25,19 @@
 
   services.displayManager.ly.enable = true;
 
-  services.picom.enable = true;
+  services.picom = {
+    enable = true;
+    vSync = true;
+    shadow = true;
+    settings = {
+      blur = {
+        method = "gaussian";
+        size = 10;
+        deviation = 5.0;
+      };
+    };
+    backend = "glx";
+  };
 
   services.ratbagd.enable = true; # for piper
 }
