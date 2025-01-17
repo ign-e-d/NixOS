@@ -37,6 +37,11 @@
       # };
       unredir-if-possible = false;
     };
+    shadowExclude = [
+      "window_type *= 'menu'"
+      "name ~= 'Firefox$'"
+      "focused = 1"
+    ];
     backend = "xrender";
     # package = pkgs.picom-pijulius;
   };
