@@ -28,7 +28,7 @@ static const char *colors[SchemeLast][2] = {
 	/*               fg         bg       */
 	[SchemeNorm] = { col_gray3, col_gray1  },
 	[SchemeSel]  = { col_gray4, col_orange },
-	[SchemeOut]  = { "#000000", "#00ffff"  },
+	[SchemeOut]  = { "#000000", col_orange }, //"#00ffff"  },
 };
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
 static unsigned int lines      = 10;
