@@ -100,11 +100,11 @@
     steam-run
 
     libsForQt5.ark
-    libsForQt5.kdeconnect-kde
+    # libsForQt5.kdeconnect-kde
     libsForQt5.kdialog
-    libsForQt5.kate
+    # libsForQt5.kate
     libsForQt5.filelight
-    libsForQt5.kruler
+    # libsForQt5.kruler
     krita
 
     piper
