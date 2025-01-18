@@ -80,14 +80,14 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, NULL }; // { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, NULL };
 static const char *termcmd[]  = { "kitty", NULL };
 static const char *rebuildcmd[] = { "kitty", "--hold", "bash", "/home/a/NixOS/scripts/error-wrap.sh", NULL };
 static const char *v2rayAcmd[] = { "kitty", "sudo", "v2rayA", NULL };
 static const char *slockcmd[] = { "slock", NULL };
-static const char *rangercmd[] = { "kitty", "--hold", "ranger", NULL };
-static const char *savescreenshotcmd[] = { "kitty", "--hold", "maim", "-s", "/home/a/Pictures/$(date +%s).png", NULL };
-static const char *copyscreenshotcmd[] = { "kitty", "--hold", "bash", "/home/a/NixOS/scripts/copyscreenshot.sh", NULL };
+static const char *rangercmd[] = { "kitty", "ranger", NULL };
+static const char *savescreenshotcmd[] = { "bash", "/home/a/NixOS/scripts/savescreenshot.sh", NULL };
+static const char *copyscreenshotcmd[] = { "bash", "/home/a/NixOS/scripts/copyscreenshot.sh", NULL };
 
 #include "movestack.c"
 static const Key keys[] = {
