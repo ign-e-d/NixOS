@@ -6,6 +6,7 @@
 	2. https://dwm.suckless.org/patches/resizehere/
 	3. https://dwm.suckless.org/patches/statusallmons/
 	4. https://dwm.suckless.org/patches/cool_autostart/dwm-cool-autostart-20240312-9f88553.diff
+	5. https://dwm.suckless.org/patches/alpha/dwm-fixborders-6.2.diff
 */
 
 /* appearance */

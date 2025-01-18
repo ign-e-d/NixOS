@@ -25,27 +25,9 @@
 
   services.displayManager.ly.enable = true;
 
-  # services.picom = {
-  #   enable = true;
-  #   vSync = true;
-  #   # settings = {
-  #   #   unredir-if-possible = false;
-  #   # };
-  #   # shadowExclude = [
-  #   #   "window_type *= 'menu'"
-  #   #   "name ~= 'Firefox$'"
-  #   #   "focused = 1"
-  #   # ];
-  #   backend = "xrender";
-  #   # package = pkgs.picom-pijulius;
-  # };
-
   services.picom = {
     enable = true;
     vSync = true;
-    shadowExclude = [
-      "class_g = 'firefox' && argb"
-    ];
   };
 
   services.ratbagd.enable = true; # for piper
