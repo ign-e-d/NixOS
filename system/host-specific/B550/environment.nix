@@ -11,9 +11,5 @@
     (slstatus.overrideAttrs (oldAttrs: rec {
       src = ../../../slstatus-1.0;
     }))
-    # dwm-status
-    # (dwmblocks.overrideAttrs (oldAttrs: rec {
-    #   src = ../../../dwmblocks;
-    # }))
   ];
 }
