@@ -22,8 +22,6 @@
   programs.home-manager.enable = true;
 
   home.packages = with pkgs; [
-    nix-output-monitor
-
     audacious
 
     bat
@@ -45,7 +43,6 @@
     fselect
 
     gamescope
-    gimp
 
     htop
     hsetroot
@@ -56,9 +53,11 @@
     lm_sensors
 
     # mpv
+    maim
     moc
 
     neofetch
+    nix-output-monitor
 
     obs-studio
 
@@ -68,6 +67,7 @@
     qalculate-gtk
     qbittorrent
 
+    ranger
     runelite
 
     systemd
