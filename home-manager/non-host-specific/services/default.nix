@@ -6,8 +6,6 @@
 }:
 {
   imports = [
-    ./home.nix
-    ./programs
-    ./services
+    ./dunst.nix
   ];
 }

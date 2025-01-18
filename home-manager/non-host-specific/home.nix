@@ -21,10 +21,6 @@
 
   programs.home-manager.enable = true;
 
-  services.dunst = {
-    enable = true;
-  };
-
   home.packages = with pkgs; [
     nix-output-monitor
 
