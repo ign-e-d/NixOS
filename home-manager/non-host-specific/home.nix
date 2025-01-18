@@ -27,6 +27,7 @@
     audacious
 
     bat
+    bashmount
     broot
     bottom
 
@@ -55,6 +56,7 @@
     lm_sensors
 
     # mpv
+    moc
 
     neofetch
 
