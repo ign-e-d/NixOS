@@ -2,7 +2,12 @@
 # This file is intended for non-host-specific home-manager settings.
 #
 
-{ config, pkgs, inputs, ... }:
+{
+  config,
+  pkgs,
+  inputs,
+  ...
+}:
 {
   programs.kitty = {
     enable = true;
@@ -16,4 +21,3 @@
     };
   };
 }
-
