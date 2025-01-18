@@ -1,4 +1,9 @@
-{ config, pkgs, inputs, ... }:
+{
+  config,
+  pkgs,
+  inputs,
+  ...
+}:
 {
   imports = [
     ./boot.nix
@@ -14,7 +19,6 @@
     ./programs.nix
     ./services.nix
     ./sound.nix
-    ./stylix.nix
     ./system.nix
     ./systemd.nix
     ./time.nix
