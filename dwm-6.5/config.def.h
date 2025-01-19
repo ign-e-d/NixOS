@@ -7,12 +7,13 @@
 	3. https://dwm.suckless.org/patches/statusallmons/
 	4. https://dwm.suckless.org/patches/cool_autostart/dwm-cool-autostart-20240312-9f88553.diff
 	5. https://dwm.suckless.org/patches/alpha/dwm-fixborders-6.2.diff
+	6. https://dwm.suckless.org/patches/systray/dwm-systray-20230922-9f88553.diff
 */
 
 /* appearance */
 static const unsigned int borderpx  = 3;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
-static const unsigned int systraypinning = 0;   /* 0: sloppy systray follows selected monitor, >0: pin systray to monitor X */
+static const unsigned int systraypinning = 1;   /* 0: sloppy systray follows selected monitor, >0: pin systray to monitor X */
 static const unsigned int systrayonleft = 0;    /* 0: systray in the right corner, >0: systray on left of status text */
 static const unsigned int systrayspacing = 2;   /* systray spacing */
 static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display systray on the first monitor, False: display systray on the last monitor*/
@@ -39,7 +40,7 @@ static const char *colors[][3]      = {
 
 static const char *const autostart[] = {
 	"slstatus", NULL,
-	"xrandr", "--output", "HDMI-A-0", "--mode", "1920x1080", "--rate", "75", NULL,
+	"xrandr", "--output", "HDMI-A-0", "--mode", "1920x1080", "--rate", "75", NULL, // TODO somehow resolve for different hosts
 	"hsetroot", "-fill", "/home/a/NixOS/pictures/ARR02.png", NULL,
 	NULL /* terminate */
 };
