@@ -90,7 +90,7 @@ static const char *termcmd[]  = { "kitty", NULL };
 static const char *rebuildcmd[] = { "kitty", "--hold", "bash", "/home/a/NixOS/scripts/error-wrap.sh", NULL };
 static const char *v2rayAcmd[] = { "kitty", "sudo", "v2rayA", NULL };
 static const char *slockcmd[] = { "slock", NULL };
-static const char *rangercmd[] = { "kitty", "ranger", NULL };
+static const char *rangercmd[] = { "kitty", "--hold", "ranger", NULL };
 static const char *savescreenshotcmd[] = { "bash", "/home/a/NixOS/scripts/savescreenshot.sh", NULL };
 static const char *copyscreenshotcmd[] = { "bash", "/home/a/NixOS/scripts/copyscreenshot.sh", NULL };
 
