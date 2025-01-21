@@ -5,6 +5,12 @@
 { config, pkgs, ... }:
 {
   xdg = {
+    mime = {
+      enable = true;
+      defaultApplications = {
+        "application/pdf" = "firefox.desktop";
+      };
+    };
     # autostart.enable = true;
     portal = {
       enable = true;
