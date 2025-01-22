@@ -67,7 +67,6 @@
     qalculate-gtk
     qbittorrent
 
-    ranger
     runelite
 
     systemd

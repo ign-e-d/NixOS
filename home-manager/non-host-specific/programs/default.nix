@@ -10,5 +10,6 @@
     ./git.nix
     ./kitty.nix
     ./bash.nix
+    ./ranger.nix
   ];
 }
