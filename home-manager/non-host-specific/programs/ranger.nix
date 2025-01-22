@@ -11,5 +11,12 @@
 {
   programs.ranger = {
     enable = true;
+
+    rifle = [
+      {
+        condition = "ext pdf";
+        command = "firefox -- \"$@\"";
+      }
+    ];
   };
 }
