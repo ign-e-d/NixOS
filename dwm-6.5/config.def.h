@@ -8,6 +8,7 @@
 	4. https://dwm.suckless.org/patches/cool_autostart/dwm-cool-autostart-20240312-9f88553.diff
 	5. https://dwm.suckless.org/patches/alpha/dwm-fixborders-6.2.diff
 	6. https://dwm.suckless.org/patches/systray/dwm-systray-20230922-9f88553.diff
+	7. https://dwm.suckless.org/patches/swallow/dwm-swallow-6.3.diff
 */
 
 /* appearance */
@@ -57,7 +58,7 @@ static const Rule rules[] = {
 	/* class     instance  title           tags mask  isfloating  isterminal  noswallow  monitor */
 	{ "Gimp",    NULL,     NULL,           0,         1,          0,           0,        -1 },
 	{ "Firefox", NULL,     NULL,           1 << 8,    0,          0,          -1,        -1 },
-	{ "St",      NULL,     NULL,           0,         0,          1,           0,        -1 },
+	{ "kitty",   NULL,     NULL,           0,         0,          1,           0,        -1 },
 	{ NULL,      NULL,     "Event Tester", 0,         0,          0,           1,        -1 }, /* xev */
 };
 
