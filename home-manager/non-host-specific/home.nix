@@ -32,6 +32,7 @@
     clinfo
     corefonts # for latex
     chromium
+    cmus
 
     drawio
     discord
@@ -54,7 +55,6 @@
 
     # mpv
     maim
-    moc
 
     neofetch
     nix-output-monitor
