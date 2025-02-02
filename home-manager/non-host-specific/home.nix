@@ -23,6 +23,7 @@
 
   home.packages = with pkgs; [
     audacious
+    alsa-utils
 
     bat
     bashmount

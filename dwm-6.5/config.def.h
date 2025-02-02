@@ -97,6 +97,7 @@ static const char *slockcmd[] = { "slock", NULL };
 static const char *rangercmd[] = { "kitty", "--hold", "ranger", NULL };
 static const char *savescreenshotcmd[] = { "bash", "/home/a/NixOS/scripts/savescreenshot.sh", NULL };
 static const char *copyscreenshotcmd[] = { "bash", "/home/a/NixOS/scripts/copyscreenshot.sh", NULL };
+static const char *alsamixercmd[] = { "kitty", "alsamixer", NULL };
 
 #include "movestack.c"
 static const Key keys[] = {
@@ -142,6 +143,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_e,        spawn,          {.v = rangercmd } },
 	{ MODKEY|ShiftMask,             PrintScreen, spawn,          {.v = savescreenshotcmd } },
 	{ MODKEY,                       PrintScreen, spawn,          {.v = copyscreenshotcmd } },
+	{ MODKEY,                       XK_a,        spawn,          {.v = alsamixercmd } },
 };
 
 /* button definitions */
