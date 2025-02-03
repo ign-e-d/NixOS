@@ -11,5 +11,6 @@
     ./kitty.nix
     ./bash.nix
     ./ranger.nix
+    ./lf.nix
   ];
 }
