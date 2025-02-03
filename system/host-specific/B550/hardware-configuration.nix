@@ -8,7 +8,7 @@
     [ (modulesPath + "/installer/scan/not-detected.nix")
     ];
 
-  boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usbhid" "sd_mod" ];
+  boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usb_storage" "usbhid" "sd_mod" ];
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
@@ -27,6 +27,11 @@
   fileSystems."/home/a/trashdisk" =
     { device = "/dev/disk/by-uuid/5280fd4e-d8a6-4604-b8c0-d7807362765c";
       fsType = "ext4";
+    };
+
+  fileSystems."/home/a/usbdrive" =
+    { device = "/dev/disk/by-uuid/58D4-0959";
+      fsType = "exfat";
     };
 
   swapDevices = [ ];

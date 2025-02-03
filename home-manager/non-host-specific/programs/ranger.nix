@@ -12,6 +12,10 @@
   programs.ranger = {
     enable = true;
 
+    extraPackages = [
+      pkgs.w3m
+    ];
+
     rifle = [
       {
         condition = "ext pdf";
