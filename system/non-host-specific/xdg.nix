@@ -12,6 +12,8 @@
         "image/png" = "feh.desktop";
         "image/jpg" = "feh.desktop";
         "image/jpeg" = "feh.desktop";
+        "image/avi" = "feh.desktop";
+        "video/x-msvideo" = "vlc.desktop";
       };
     };
     # autostart.enable = true;
