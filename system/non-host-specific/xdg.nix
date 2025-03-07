@@ -10,6 +10,8 @@
       defaultApplications = {
         "application/pdf" = "firefox.desktop";
         "image/png" = "feh.desktop";
+        "image/jpg" = "feh.desktop";
+        "image/jpeg" = "feh.desktop";
       };
     };
     # autostart.enable = true;
