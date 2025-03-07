@@ -43,6 +43,7 @@
     ffmpeg_7-full
     firefox
     fselect
+    feh
 
     gamescope
 

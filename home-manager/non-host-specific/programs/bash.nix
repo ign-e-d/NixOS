@@ -13,6 +13,9 @@
     enable = true;
     enableCompletion = true;
     bashrcExtra = ''
+      # Opener for lf
+      export OPENER=xdg-open
+
       # Change keyboard layout
       # setxkbmap -option grp:ctrl_shift_toggle us,ru
 

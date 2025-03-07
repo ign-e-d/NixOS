@@ -9,6 +9,7 @@
       enable = true;
       defaultApplications = {
         "application/pdf" = "firefox.desktop";
+        "image/png" = "feh.desktop";
       };
     };
     # autostart.enable = true;
