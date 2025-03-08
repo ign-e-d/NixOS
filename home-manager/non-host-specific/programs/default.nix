@@ -12,6 +12,5 @@
     ./bash.nix
     ./ranger.nix
     ./lf.nix
-    ./tmux.nix
   ];
 }
