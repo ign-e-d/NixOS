@@ -70,6 +70,7 @@
     runelite
 
     systemd
+    syncthing
     sqlitebrowser
 
     tor-browser-bundle-bin
