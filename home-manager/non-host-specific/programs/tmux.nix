@@ -7,8 +7,13 @@
 {
   programs.tmux = {
     enable = true;
+    clock24 = true;
+    keyMode = "vi";
     plugins = with pkgs; [
-      tmuxPlugins.tmux-which-key
+      {
+        plugin = tmuxPlugins.tmux-which-key;
+        extraConfig = "set -g @plugin 'alexwforsythe/tmux-which-key'";
+      }
     ];
   };
 }
