@@ -32,11 +32,9 @@
 
     clinfo
     corefonts # for latex
-    chromium
     cmus
 
     drawio
-    discord
 
     eza
 
@@ -50,9 +48,9 @@
     htop
     hsetroot
 
-    kiwix
+    keepassxc
 
-    linuxKernel.packages.linux_5_4.wireguard
+    # linuxKernel.packages.linux_5_4.wireguard
     lm_sensors
 
     # mpv
@@ -86,13 +84,13 @@
     vesktop
 
     walk
-    wireguard-tools
     wmctrl
 
     xclip
     xdotool
 
     libreoffice-qt
+    librewolf
     hunspell
     hunspellDicts.en_US
     hunspellDicts.ru_RU
@@ -102,14 +100,7 @@
     steamcmd
     steam-run
 
-    libsForQt5.ark
-    # libsForQt5.kdeconnect-kde
-    libsForQt5.kdialog
-    # libsForQt5.kate
     libsForQt5.filelight
-    # libsForQt5.kruler
     krita
-
-    piper
   ];
 }
