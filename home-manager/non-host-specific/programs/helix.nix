@@ -165,6 +165,7 @@
           name = "rust";
           formatter = {
             command = "rustfmt";
+            args = [ "--edition=2021" ];
           };
           indent = {
             tab-width = 4;
