@@ -29,6 +29,7 @@
     bashmount
     broot
     bottom
+    bluetuith
 
     clinfo
     corefonts # for latex
