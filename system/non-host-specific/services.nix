@@ -30,5 +30,5 @@
     vSync = true;
   };
 
-  services.ratbagd.enable = true; # for piper
+  services.blueman.enable = true;
 }

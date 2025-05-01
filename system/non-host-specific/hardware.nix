@@ -5,6 +5,12 @@
 { config, pkgs, ... }:
 {
   hardware.bluetooth.enable = true;
+  hardware.bluetooth.powerOnBoot = true;
+  hardware.bluetooth.input = {
+    General = {
+      IdleTimeout = 0; # NOTE default 0
+    };
+  };
 
   hardware.graphics.enable = true;
   # hardware.opengl.driSupport = true; no longer has any effect
