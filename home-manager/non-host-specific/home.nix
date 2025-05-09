@@ -21,6 +21,8 @@
 
   programs.home-manager.enable = true;
 
+  home.file.".icons/default".source = "${pkgs.vanilla-dmz}/share/icons/Vanilla-DMZ";
+
   home.packages = with pkgs; [
     audacious
     alsa-utils
