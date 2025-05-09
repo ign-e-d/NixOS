@@ -5,7 +5,6 @@
 { config, pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
-    vanilla-dmz
     (dmenu.overrideAttrs (oldAttrs: rec {
       src = ../../../dmenu-5.3;
     }))
