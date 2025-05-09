@@ -21,27 +21,27 @@
 
   programs.home-manager.enable = true;
 
-  # home.file.".icons/default".source = "${pkgs.vanilla-dmz}/share/icons/Vanilla-DMZ";
+  home.file.".icons/default".source = "${pkgs.vanilla-dmz}/share/icons/Vanilla-DMZ";
 
-  xsession = {
-    enable = true;
-    pointerCursor = {
-      size = 40;
-      # package = pkgs.nur.repos.ambroisie.vimix-cursors;
-      # name = "Vimix-white-cursors";
-      # name = "Vimix-cursors";
+  # xsession = {
+  #   enable = true;
+  #   pointerCursor = {
+  #     size = 40;
+  #     # package = pkgs.nur.repos.ambroisie.vimix-cursors;
+  #     # name = "Vimix-white-cursors";
+  #     # name = "Vimix-cursors";
 
-      package = pkgs.capitaine-cursors;
-      name = "capitaine-cursors";
+  #     package = pkgs.capitaine-cursors;
+  #     name = "capitaine-cursors";
 
-      # package = pkgs.nur.repos.ambroisie.volantes-cursors;
-      # name = "volantes_light_cursors";
-      # name = "volantes_cursors";
+  #     # package = pkgs.nur.repos.ambroisie.volantes-cursors;
+  #     # name = "volantes_light_cursors";
+  #     # name = "volantes_cursors";
 
-      # package = pkgs.nur.repos.dan4ik605743.lyra-cursors;
-      # name = "LyraF-cursors";
-    };
-  };
+  #     # package = pkgs.nur.repos.dan4ik605743.lyra-cursors;
+  #     # name = "LyraF-cursors";
+  #   };
+  # };
 
   home.packages = with pkgs; [
     audacious
